@@ -1,0 +1,17 @@
+# Today Discussion Summary
+
+## 오늘 합의한 핵심
+- 반도체/AMOS ontology는 한곳에서 관리하는 것이 좋다.
+- 스킬은 source of truth가 아니라 entrypoint/index 역할이 더 적절하다.
+- Honcho에는 오늘 논의가 기록되어 있으므로, 스킬에는 “과거 논의 맥락은 Honcho에서 찾을 수 있다”는 안내를 넣는 것이 좋다.
+- 다만 active 기준은 항상 repo 문서가 우선이다.
+- 추천 디렉토리 구조를 실제 프로젝트로 만들고, phase 1부터 하나씩 구현하는 방식으로 간다.
+
+## 새 프로젝트의 역할
+- ontology / engine / scenarios / programs / roadmap를 한곳에서 정리
+- 구현 저장소(agent/backend/frontend)와 공통 도메인 의미 체계를 연결
+
+## 다음 액션
+1. phase 1 문서 검토
+2. Claude feedback
+3. 구현 저장소에 어떤 항목부터 반영할지 결정

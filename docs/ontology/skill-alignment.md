@@ -1,0 +1,62 @@
+# Skill ↔ Domain Alignment
+
+## 목적
+`semiconductor-amhs-ontology` 스킬과 domain canonical 문서의 역할을 분리하고, 중복/차이를 관리한다.
+
+## 역할 분리
+### domain canonical 문서
+위치:
+- `docs/ontology/common-semiconductor-amhs.md`
+- `docs/ontology/phase1.md`
+- `docs/engine/practical-principles.md`
+- `docs/engine/phase1-engine.md`
+- `docs/engine/runtime-observability.md`
+
+역할:
+- 현재 active source of truth
+- phase별 설계 기준
+- runtime / trace / policy / roadmap와의 직접 연결
+
+### skill
+위치:
+- `~/.hermes/skills/research/semiconductor-amhs-ontology/`
+
+역할:
+- 빠른 참조 허브
+- 벤더 중립적 개념 요약
+- 이미지/GLB/요구사항 해석 규칙
+- Honcho/프로젝트 문서로 들어가는 입구
+
+## 중복/차이 표
+| 항목 | domain에 둘 것 | skill에 둘 것 | 비고 |
+|---|---|---|---|
+| Phase 1 ontology | 예 | 아니오(링크/요약만) | active 기준은 domain 우선 |
+| runtime state / trace / policy 연결 | 예 | 최소 설명만 | 구현 연결은 domain이 담당 |
+| 공통 AMHS 용어표 | 예 | 예(축약본) | skill은 빠른 참조용 축약 허용 |
+| 이미지 판독 규칙 | 아니오(필요 최소만) | 예 | skill 쪽 강점 |
+| editor 매핑 규칙 | 프로젝트 성격에 따라 일부 | 예 | GLB/editor 작업용 규칙은 skill 유지 가치 큼 |
+| Daifuku/Muratec 같은 벤더 읽기 팁 | 선택 | 예 | domain canonical의 중심은 벤더 중립이 좋음 |
+| Honcho 사용 원칙 | 예 | 예 | 다만 active 기준은 domain 우선 |
+
+## 현재 판단
+### skill에 남길 것
+- `references/ontology.md` 의 빠른 용어표
+- `references/image-reading.md` 의 시각 판독 규칙
+- `references/editor-mapping.md` 의 GLB/editor 매핑 규칙
+
+### domain으로 승격/유지할 것
+- ontology의 active 기준
+- phase roadmap
+- trace/policy/runtime 연결
+- archive triage / consolidation status
+
+### skill에서 직접 소유하지 않을 것
+- 프로젝트별 phase1 상세 내용
+- 구현 저장소와의 코드 매핑 상세표
+- active roadmap/checklist 원문
+
+## 운영 규칙
+1. domain 문서가 바뀌면 skill은 링크/요약만 갱신한다.
+2. skill reference가 domain canonical과 충돌하면 domain을 우선한다.
+3. skill은 project source of truth가 아니라 해석 허브다.
+4. 프로젝트가 더 커지면 skill은 더 짧아지고, domain 문서는 더 풍부해져도 된다.

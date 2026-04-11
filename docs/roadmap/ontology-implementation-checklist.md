@@ -5,13 +5,18 @@
 ## 목적
 ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / retrieval에 점진적으로 연결한다.
 
+이 문서는 domain 기준과 구현 정렬 순서를 정의한다.
+저장소별 상세 매핑표 자체는 각 구현 저장소에서 관리한다.
+
 ## Phase 1 — 지금 바로 연결할 것
 ### 1. 용어와 최소 모델 고정
 - `Request`, `Task`, `ToolCall`, `Policy`, `ClarifyRequest`, `ExecutionTrace` 용어를 현재 코드와 대조
-- supervisor / API 응답 / trace 이벤트에서 같은 의미를 같은 이름으로 부르도록 정리
-- 현재 코드 매핑표 작성
+- canonical 정의는 `../ontology/minimal-runtime-model.md`를 기준으로 삼는다
+- supervisor / API 응답 / trace 이벤트에서 같은 의미를 같은 이름 또는 명시적 alias로 부르도록 정리
+- 저장소별 개념 ↔ 코드 매핑 문서 작성 기준 확정
 
 ### 2. 최소 상태 집합 정리
+- canonical 상태 집합의 기준 문서는 `../ontology/minimal-runtime-model.md`다.
 - `pending`
 - `clarifying`
 - `executing`
@@ -19,11 +24,15 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 - `blocked`
 - `failed`
 
-### 3. 현재 코드 매핑표 만들기
-- supervisor 출력 필드
-- clarify 이벤트 구조
-- tool 실행 결과 구조
-- 이미 있는 필드 / 없는 필드 표 작성
+### 3. 저장소별 개념 ↔ 코드 매핑 문서 정리
+- 각 구현 저장소(agent/backend/frontend 등)는 자신의 코드 구조 기준으로 매핑 문서를 유지한다.
+- domain은 매핑표 자체의 저장소가 아니라, 어떤 개념을 맞춰야 하는지 기준만 제공한다.
+- 매핑 문서에는 아래 항목을 포함한다.
+  - domain concept
+  - local class / schema / API / event name
+  - 일치 여부
+  - 누락/편차
+  - 정리 예정 항목
 
 ## Phase 2 — Supervisor 구조 확장
 - `intent`
@@ -48,17 +57,17 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 완료 기준:
 - 한 요청이 왜 답변/차단/clarify/실패로 끝났는지 trace만 보고 재구성 가능하다.
 
-## Phase 4 — Retrieval 구조화
-- entity-aware retrieval 최소 도입
-- source / trust level / tags / entity reference 메타데이터 전략
-- retrieval 단계에서의 trust/policy 반영 검토
-
-## Phase 5 — Policy / Permission 연결
+## Phase 4 — Policy / Permission 연결
 - tool risk tier 기준
 - confirmation 필요 조건
 - block 조건
 - clarify 우선 조건
 - `allow/deny/confirm/clarify` decision 레이어
+
+## Phase 5 — Retrieval 구조화
+- entity-aware retrieval 최소 도입
+- source / trust level / tags / entity reference 메타데이터 전략
+- retrieval 단계에서의 trust/policy 반영 검토
 
 ## Phase 6 — Clarify 패턴 정리
 - 자주 빠지는 slot 목록화
@@ -80,3 +89,17 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 ### 나중에 할 것
 8. meta-ontology 축적
 9. simulator / digital twin 확장 구조 반영
+
+## 현재 domain 문서 사용 순서
+domain 저장소에서 지금 우선 참고할 순서는 아래와 같다.
+
+1. `../ontology/minimal-runtime-model.md`
+2. `../engine/supervisor-structure.md`
+3. `../engine/execution-trace-structure.md`
+4. `../engine/policy-permission-structure.md`
+5. `../programs/implementation-repo-reference-guide.md`
+
+중요:
+- domain은 의미 / 경계 / 판단 축 / 상태 canonical을 소유한다.
+- 저장소별 class / field / API / event / state 이름은 각 구현 저장소가 소유한다.
+- 이 체크리스트는 구현 세부안 설계서가 아니라, 구현 저장소가 self-check할 기준을 정리하는 문서다.

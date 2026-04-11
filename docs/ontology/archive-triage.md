@@ -1,5 +1,7 @@
 # Archive Triage
 
+> 이 문서는 **governance / transitional** 문서다. primary domain canon 자체가 아니라, archive 문서의 승격/유지/폐기 판단을 관리한다.
+
 ## 목적
 `agent/docs/archive/` 에 남아 있는 반도체/AMOS ontology 관련 문서를 계속 보관만 할지, active 문서로 승격할 개념이 있는지 판단한다.
 
@@ -36,4 +38,4 @@
 ## 다음 단계
 1. archive 원문에 `superseded` 안내를 추가할지 검토
 2. skill reference와 domain canonical의 역할 분리 유지
-3. 구현 저장소 코드 매핑 표를 active 문서로 추가
+3. 구현 저장소별 개념 ↔ 코드 매핑 문서를 정리하고, domain에는 링크와 기준만 남긴다

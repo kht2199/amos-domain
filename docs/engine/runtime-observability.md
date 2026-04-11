@@ -1,41 +1,11 @@
 # Runtime / Observability
 
-## 현재 핵심 관찰 단위
-- request
-- stream
-- event
-- trace
-- request log
+이 문서의 핵심 내용은 `phase1-engine.md`로 통합되었다.
 
-## 핵심 이벤트
-- stream_start
-- plan_update
-- agent_start
-- tool_call
-- tool_result
-- token
-- clarify
-- trace
-- error
-- done
+## 현재 기준
+- Phase 1 엔진 구조와 observability 기준: `phase1-engine.md`
+- runtime vocabulary와 canonical 상태 집합: `../ontology/minimal-runtime-model.md`
+- 실전 운영 원칙과 불변식: `practical-principles.md`
 
-## 왜 중요한가
-이 흐름은 단순 UI 표시용이 아니라 다음 기반이 된다.
-- replay
-- debugging
-- KPI
-- routing 개선
-- 사용자 pain point 분석
-
-## Phase 1 관찰 목표
-- first feedback latency 측정 가능
-- clarify rate 측정 가능
-- tool success/failure 추적 가능
-- route correction과 failed path 복기 가능
-
-## 이후 확장
-- 사용자 행동 이벤트
-- 감성/불만 taxonomy
-- 오류 분류 체계
-- 장기 보관 저장소
-- real system sync event
+## 메모
+이 문서는 과거 분리 문서의 포인터로만 유지한다. 새로운 기준 내용은 여기서 확장하지 않는다.

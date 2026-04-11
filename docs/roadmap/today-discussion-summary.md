@@ -1,5 +1,7 @@
 # Today Discussion Summary
 
+> 이 문서는 **transitional / history** 성격의 요약 메모다. active roadmap canon 자체가 아니라, 당시 논의 맥락을 보존한다.
+
 ## 오늘 합의한 핵심
 - 반도체/AMOS ontology는 한곳에서 관리하는 것이 좋다.
 - 스킬은 source of truth가 아니라 entrypoint/index 역할이 더 적절하다.

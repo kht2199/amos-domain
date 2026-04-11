@@ -1,21 +1,30 @@
 # Skill ↔ Domain Alignment
 
+> 이 문서는 **governance / transitional** 문서다. primary domain canon 자체가 아니라, skill과 domain canonical의 역할 분리를 설명한다.
+
 ## 목적
 `semiconductor-amhs-ontology` 스킬과 domain canonical 문서의 역할을 분리하고, 중복/차이를 관리한다.
 
 ## 역할 분리
 ### domain canonical 문서
 위치:
-- `docs/ontology/common-semiconductor-amhs.md`
-- `docs/ontology/phase1.md`
-- `docs/engine/practical-principles.md`
-- `docs/engine/phase1-engine.md`
-- `docs/engine/runtime-observability.md`
+- `common-semiconductor-amhs.md`
+- `phase1.md`
+- `minimal-runtime-model.md`
+- `../engine/practical-principles.md`
+- `../engine/phase1-engine.md`
+- `../engine/supervisor-structure.md`
+- `../engine/execution-trace-structure.md`
+- `../engine/policy-permission-structure.md`
+- `../programs/implementation-repo-reference-guide.md`
 
 역할:
 - 현재 active source of truth
 - phase별 설계 기준
 - runtime / trace / policy / roadmap와의 직접 연결
+
+참고:
+- `../engine/runtime-observability.md` 는 active canonical이 아니라 `../engine/phase1-engine.md`를 가리키는 pointer 문서다.
 
 ### skill
 위치:
@@ -46,6 +55,7 @@
 
 ### domain으로 승격/유지할 것
 - ontology의 active 기준
+- minimal runtime vocabulary / state canonical
 - phase roadmap
 - trace/policy/runtime 연결
 - archive triage / consolidation status
@@ -54,6 +64,7 @@
 - 프로젝트별 phase1 상세 내용
 - 구현 저장소와의 코드 매핑 상세표
 - active roadmap/checklist 원문
+- 이런 매핑 상세표의 정식 소유자는 domain이 아니라 각 구현 저장소다.
 
 ## 운영 규칙
 1. domain 문서가 바뀌면 skill은 링크/요약만 갱신한다.

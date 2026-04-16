@@ -38,8 +38,3 @@
 - Load Port belongs to EFEM or Tool Front
 - Vertical Transfer connects levels / handoff points
 
-## 관측 규칙
-문서/이미지/GLB/요구사항을 해석할 때는 항상 구분한다.
-- `visible`
-- `inferred`
-- `unknown`

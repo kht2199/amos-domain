@@ -82,7 +82,7 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 - Phase 1~6에서 무엇을 완료 기준으로 볼지
 를 고정하는 문서로 유지한다.
 
-## 현재 domain 문서 사용 순서
+## 문서 역할 경계
 구현 저장소가 실제 읽는 순서와 self-check 질문은 `../programs/implementation-repo-reference-guide.md`를 따른다.
 
 이 문서는 문서 reading guide가 아니라,

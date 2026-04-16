@@ -45,7 +45,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 ### 2) 문서 정리/거버넌스 검토가 필요한 사람
 1. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
 2. [docs/ontology/consolidation-status.md](docs/ontology/consolidation-status.md)
-3. [docs/ontology/skill-alignment.md](docs/ontology/skill-alignment.md)
+
 
 ## 문서 지도: 역할별 분류
 
@@ -92,7 +92,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 중요하지만 primary domain canon과는 역할이 다르다.
 
 - [docs/ontology/consolidation-status.md](docs/ontology/consolidation-status.md) — canonical / pointer / archive 정리 현황
-- [docs/ontology/skill-alignment.md](docs/ontology/skill-alignment.md) — skill과 domain canonical의 역할 분리
+
 - [docs/archive/today-discussion-summary.md](docs/archive/today-discussion-summary.md) — 대화 기반 과도기 요약 *(archive/history)*
 - [AGENTS.md](AGENTS.md) — 이 저장소에서 작업할 때의 운영 메모
 

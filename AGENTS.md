@@ -27,6 +27,7 @@
 - `docs/ontology/minimal-runtime-model.md` 를 Phase 1 runtime vocabulary / 상태 canonical 기준으로 우선 참조한다.
 - `docs/roadmap/ontology-implementation-checklist.md` 는 Phase 1 active checklist이고, `implementation-repo-reference-guide.md` 는 읽는 순서와 질문을 안내하는 guide다.
 - `phase1.md` 는 큰 그림과 관계를, `phase1-engine.md` 는 엔진 구조와 observability 관점을 담당한다.
+- Honcho 같은 agent 운영용 기억/맥락 회수 메커니즘은 canonical docs에 퍼뜨리지 말고, 필요하면 `AGENTS.md` 같은 작업 규칙 문서에서만 다룬다.
 - 이미 통합된 내용은 중복 문서로 다시 늘리지 말고 pointer 문서 또는 링크로 정리한다.
 - 저장소별 concept-to-code mapping 표는 이 저장소에 복제하지 말고, 필요한 경우 링크와 점검 기준만 남긴다.
 

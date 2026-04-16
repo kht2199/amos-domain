@@ -47,10 +47,9 @@
 이 파일들은 active source of truth가 아니다.
 필요한 개념만 선별해 domain 프로젝트로 승격한다.
 
-### skill / Honcho
-- skill은 빠른 참조, 해석 규칙, Honcho 안내를 제공한다.
+### skill
+- skill은 빠른 참조와 해석 규칙을 제공한다.
 - active 기준은 domain repo 문서가 우선이다.
-- 과거 논의 맥락은 Honcho에서 찾는다.
 
 참고:
 - canonical / pointer / governance 전체 문서 지도는 루트 `README.md`를 primary hub로 본다.

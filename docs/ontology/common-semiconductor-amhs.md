@@ -43,7 +43,3 @@
 - `visible`
 - `inferred`
 - `unknown`
-
-## Honcho 사용 원칙
-오늘 논의나 예전 판단 근거가 필요하면 Honcho에서 대화 맥락을 찾을 수 있다.
-다만 ontology의 현재 기준은 항상 이 repo 문서가 우선이다.

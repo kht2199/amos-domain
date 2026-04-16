@@ -1,4 +1,4 @@
-# Common Semiconductor / AMHS Ontology
+# Semiconductor / AMHS Ontology
 
 ## 상위 분류
 - `Carrier` — FOUP/FOSB/cassette 계열 운반 객체

@@ -4,7 +4,7 @@
 
 ## 현재 기준
 - foundation 엔진 구조와 observability 기준: `../phase/foundation-engine.md`
-- runtime vocabulary와 canonical 상태 집합: `../phase/foundation-ontology.md`
+- runtime vocabulary와 canonical 상태 집합: `../ontology/foundation-ontology.md`
 - 실전 운영 원칙과 불변식: `practical-principles.md`
 
 ## 메모

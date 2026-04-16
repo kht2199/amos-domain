@@ -6,7 +6,7 @@
 이 문서는 AMOS를 문서용이 아니라 **실제로 잘 동작하게 만들기 위한 운영 원칙**을 정리한다.
 
 ## 0. 먼저 볼 문서
-- runtime vocabulary / 상태 canonical: `../phase/foundation-ontology.md`
+- runtime vocabulary / 상태 canonical: `../ontology/foundation-ontology.md`
 - foundation 엔진 구조: `../phase/foundation-engine.md`
 - active checklist: `../roadmap/ontology-implementation-checklist.md`
 - 구현 저장소 참고 순서: `../programs/implementation-repo-reference-guide.md`

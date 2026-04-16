@@ -22,8 +22,8 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 
 #### Step A. ontology 자체를 먼저 본다
 1. [docs/ontology/index.md](docs/ontology/index.md)
-2. [docs/ontology/common-semiconductor-amhs.md](docs/ontology/common-semiconductor-amhs.md)
-3. [docs/phase/foundation-ontology.md](docs/phase/foundation-ontology.md)
+2. [docs/ontology/semiconductor-amhs.md](docs/ontology/semiconductor-amhs.md)
+3. [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md)
 4. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
 
 #### Step B. ontology를 사용하는 active 문서를 본다
@@ -43,7 +43,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 
 ### 2) 문서 정리/거버넌스 검토가 필요한 사람
 1. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
-2. [docs/ontology/consolidation-status.md](docs/ontology/consolidation-status.md)
+2. [AGENTS.md](AGENTS.md)
 
 
 ## 문서 지도: 역할별 분류
@@ -52,8 +52,8 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 이 저장소의 핵심 active 기준 문서다.
 
 #### Ontology
-- [docs/ontology/common-semiconductor-amhs.md](docs/ontology/common-semiconductor-amhs.md) — 공통 반도체/AMHS 상위 개념
-- [docs/phase/foundation-ontology.md](docs/phase/foundation-ontology.md) — 현재 foundation ontology 기준 + runtime vocabulary / 상태 canonical
+- [docs/ontology/semiconductor-amhs.md](docs/ontology/semiconductor-amhs.md) — 반도체/AMHS 상위 개념
+- [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md) — 현재 foundation ontology 기준 + runtime vocabulary / 상태 canonical
 - [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md) — ontology와 구현 저장소의 ownership / source-of-truth 규칙
 
 #### Engine / runtime principles
@@ -86,10 +86,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 - [docs/programs/project-classification.md](docs/programs/project-classification.md) → 핵심 내용은 [docs/programs/program-map.md](docs/programs/program-map.md)
 
 ### D. Governance / transitional / history docs
-정리 상태, 승격 여부, skill/domain 경계 같은 메타 정보를 담는다.
-중요하지만 primary domain canon과는 역할이 다르다.
-
-- [docs/ontology/consolidation-status.md](docs/ontology/consolidation-status.md) — canonical / pointer / archive 정리 현황
+작업 규칙, archive 문서, 운영 메모처럼 primary domain canon 밖의 메타 정보를 담는다.
 
 - [docs/archive/today-discussion-summary.md](docs/archive/today-discussion-summary.md) — 대화 기반 과도기 요약 *(archive/history)*
 - [AGENTS.md](AGENTS.md) — 이 저장소에서 작업할 때의 운영 메모
@@ -110,7 +107,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 
 ### domain repo가 제공하는 기준
 - 구현 저장소용 읽는 순서 / self-check 질문 → [docs/programs/implementation-repo-reference-guide.md](docs/programs/implementation-repo-reference-guide.md)
-- runtime vocabulary / 상태 → [docs/phase/foundation-ontology.md](docs/phase/foundation-ontology.md)
+- runtime vocabulary / 상태 → [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md)
 - supervisor 구조 → [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md)
 - trace semantics → [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md)
 - policy / permission semantics → [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md)
@@ -135,7 +132,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 자세한 규칙은 [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)를 따른다.
 
 ## 디렉토리 구조
-- `docs/ontology/` — 공통 개념, source-of-truth 규칙, 정리 상태
+- `docs/ontology/` — ontology 기준 문서, 반도체/AMHS 상위 개념, source-of-truth 규칙
 - `docs/engine/` — runtime / trace / policy / supervisor / 전략 문서
 - `docs/scenarios/` — replay/synthetic/오류 주입 전 단계 시나리오
 - `docs/programs/` — 구현 저장소와의 책임 연결 지도

@@ -1,22 +1,20 @@
 # Ontology Index
 
 ## 이 폴더의 역할
-반도체/AMOS 관련 의미 체계와 ontology 기준을 이 폴더 안에서 active하게 관리한다.
+반도체/AMOS 관련 의미 체계, ontology 기준, runtime vocabulary 기준을 이 폴더 안에서 active하게 관리한다.
 
 이 인덱스는 **ontology 폴더 내부 기준**만 빠르게 보여준다.
 폴더 바깥 문서 읽기 순서나 구현 저장소 self-check 안내는 여기서 소유하지 않는다.
 
 ## 이 폴더 안의 확인 순서
-1. `common-semiconductor-amhs.md`에서 공통 반도체/AMHS 상위 개념을 먼저 확인한다.
-2. `../phase/foundation-ontology.md`에서 현재 foundation ontology 범위, 관계, 해석 축, runtime vocabulary와 최소 상태 canonical을 함께 확인한다.
+1. `semiconductor-amhs.md`에서 반도체/AMHS 상위 개념을 먼저 확인한다.
+2. `foundation-ontology.md`에서 현재 foundation ontology 범위, 관계, 해석 축, runtime vocabulary와 최소 상태 canonical을 함께 확인한다.
 3. `source-of-truth.md`에서 ontology 문서와 다른 층위 문서의 ownership 경계를 확인한다.
-4. 필요할 때만 `consolidation-status.md`로 정리 상태와 governance 메모를 확인한다.
 
 ## 문서
-- `common-semiconductor-amhs.md` — 공통 반도체/AMHS 상위 개념
-- `../phase/foundation-ontology.md` — 현재 foundation ontology 기준 + 공통 runtime vocabulary / 최소 상태 canonical
+- `semiconductor-amhs.md` — 반도체/AMHS 상위 개념
+- `foundation-ontology.md` — 현재 foundation ontology 기준 + runtime vocabulary / 최소 상태 canonical
 - `source-of-truth.md` — ontology 문서와 타 문서 층위의 ownership / source-of-truth 규칙
-- `consolidation-status.md` — canonical / pointer / archive 정리 상태
 
 
 ## 원칙

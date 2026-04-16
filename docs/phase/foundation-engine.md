@@ -4,7 +4,7 @@
 현재 foundation에서는 simulator 전체를 만드는 것이 아니라, 이후 simulator/digital twin이 올라갈 수 있는 최소 엔진 개념을 먼저 정리한다.
 
 ## 먼저 볼 문서
-- runtime vocabulary / 상태 canonical: `../phase/foundation-ontology.md`
+- runtime vocabulary / 상태 canonical: `../ontology/foundation-ontology.md`
 - active checklist: `../roadmap/ontology-implementation-checklist.md`
 - 구현 저장소 참고 순서: `../programs/implementation-repo-reference-guide.md`
 - later expansion reference: `../engine/supervisor-structure.md`, `../engine/execution-trace-structure.md`, `../engine/policy-permission-structure.md`
@@ -50,7 +50,7 @@
 - policy / permission 구조화의 domain 기준은 `../engine/policy-permission-structure.md`를 따른다. 다만 이 문서는 later expansion reference다.
 
 ## runtime / observability 메모
-- runtime vocabulary와 canonical 상태 집합은 `../phase/foundation-ontology.md`를 따른다.
+- runtime vocabulary와 canonical 상태 집합은 `../ontology/foundation-ontology.md`를 따른다.
 - 이 문서는 foundation 엔진 구조와 관찰 가능성 관점에서만 정리한다.
 - 세부 이벤트 payload, 저장 포맷, 구현별 화면 구성은 각 구현 저장소에서 관리한다.
 - 구현 저장소가 실제 반영 위치를 찾을 때는 `../programs/implementation-repo-reference-guide.md`와 각 저장소의 로컬 mapping 문서를 함께 본다.

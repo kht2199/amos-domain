@@ -24,8 +24,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 1. [docs/ontology/index.md](docs/ontology/index.md)
 2. [docs/ontology/common-semiconductor-amhs.md](docs/ontology/common-semiconductor-amhs.md)
 3. [docs/phase/foundation-ontology.md](docs/phase/foundation-ontology.md)
-4. [docs/ontology/minimal-runtime-model.md](docs/ontology/minimal-runtime-model.md)
-5. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
+4. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
 
 #### Step B. ontology를 사용하는 active 문서를 본다
 6. [docs/engine/practical-principles.md](docs/engine/practical-principles.md)
@@ -54,8 +53,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 
 #### Ontology
 - [docs/ontology/common-semiconductor-amhs.md](docs/ontology/common-semiconductor-amhs.md) — 공통 반도체/AMHS 상위 개념
-- [docs/phase/foundation-ontology.md](docs/phase/foundation-ontology.md) — 현재 foundation ontology 기준
-- [docs/ontology/minimal-runtime-model.md](docs/ontology/minimal-runtime-model.md) — foundation 최소 runtime vocabulary / 상태 canonical
+- [docs/phase/foundation-ontology.md](docs/phase/foundation-ontology.md) — 현재 foundation ontology 기준 + runtime vocabulary / 상태 canonical
 - [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md) — ontology와 구현 저장소의 ownership / source-of-truth 규칙
 
 #### Engine / runtime principles
@@ -112,7 +110,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 
 ### domain repo가 제공하는 기준
 - 구현 저장소용 읽는 순서 / self-check 질문 → [docs/programs/implementation-repo-reference-guide.md](docs/programs/implementation-repo-reference-guide.md)
-- runtime vocabulary / 상태 → [docs/ontology/minimal-runtime-model.md](docs/ontology/minimal-runtime-model.md)
+- runtime vocabulary / 상태 → [docs/phase/foundation-ontology.md](docs/phase/foundation-ontology.md)
 - supervisor 구조 → [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md)
 - trace semantics → [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md)
 - policy / permission semantics → [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md)
@@ -137,7 +135,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 자세한 규칙은 [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)를 따른다.
 
 ## 디렉토리 구조
-- `docs/ontology/` — 공통 개념, source-of-truth 규칙, 정리 상태, runtime vocabulary
+- `docs/ontology/` — 공통 개념, source-of-truth 규칙, 정리 상태
 - `docs/engine/` — runtime / trace / policy / supervisor / 전략 문서
 - `docs/scenarios/` — replay/synthetic/오류 주입 전 단계 시나리오
 - `docs/programs/` — 구현 저장소와의 책임 연결 지도

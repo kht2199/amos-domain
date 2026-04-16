@@ -15,7 +15,7 @@
 - `../roadmap/implementation-roadmap.md`
 
 ## 현재 canonical alignment / semantic contract 문서
-- `minimal-runtime-model.md`
+- `foundation-ontology.md`
 - `../engine/supervisor-structure.md`
 - `../engine/execution-trace-structure.md`
 - `../engine/policy-permission-structure.md`
@@ -55,5 +55,5 @@ archive 개별 판정은 별도 triage 문서로 계속 유지하지 않고, 최
 ## 현재 남은 정리 대상
 1. archive 문서에서 더 승격할 개념이 실제로 남았는지 재판단
 2. skill references와 domain canonical 문서의 중복/차이 점검
-3. 구현 저장소별 concept-to-code mapping 문서가 `minimal-runtime-model.md` 기준으로 계속 정렬되는지 점검
+3. 구현 저장소별 concept-to-code mapping 문서가 `foundation-ontology.md` 기준으로 계속 정렬되는지 점검
 4. pointer 문서를 계속 유지할지, 충분히 안정화되면 archive로 내릴지 판단

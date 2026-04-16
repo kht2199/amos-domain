@@ -13,7 +13,7 @@
 
 - 구현 저장소에 공통으로 안내할 우선 reference는 아래 문서들이다.
   - `docs/programs/implementation-repo-reference-guide.md`
-  - `docs/ontology/minimal-runtime-model.md`
+  - `docs/phase/foundation-ontology.md`
   - `docs/roadmap/ontology-implementation-checklist.md`
   - `docs/engine/supervisor-structure.md`
   - `docs/engine/execution-trace-structure.md`
@@ -24,7 +24,7 @@
 
 ## 문서 정리 원칙
 
-- `docs/ontology/minimal-runtime-model.md` 를 foundation runtime vocabulary / 상태 canonical 기준으로 우선 참조한다.
+- `docs/phase/foundation-ontology.md` 를 foundation ontology + runtime vocabulary / 상태 canonical 기준으로 우선 참조한다.
 - `docs/roadmap/ontology-implementation-checklist.md` 는 현재 foundation active checklist이고, `implementation-repo-reference-guide.md` 는 읽는 순서와 질문을 안내하는 guide다.
 - `docs/phase/foundation-ontology.md` 는 큰 그림과 관계를, `docs/phase/foundation-engine.md` 는 엔진 구조와 observability 관점을 담당한다.
 - Honcho 같은 agent 운영용 기억/맥락 회수 메커니즘은 canonical docs에 퍼뜨리지 말고, 필요하면 `AGENTS.md` 같은 작업 규칙 문서에서만 다룬다.

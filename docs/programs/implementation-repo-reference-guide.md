@@ -27,15 +27,14 @@
 먼저 확인할 것:
 - `../ontology/common-semiconductor-amhs.md`
 - `../phase/foundation-ontology.md`
-- `../ontology/minimal-runtime-model.md`
 - `../ontology/source-of-truth.md`
 
 이 단계의 목적:
 - 구현 저장소로 내려오기 전에 ontology 자체의 개념/관계/ownership 경계를 먼저 고정한다.
 
-### 1. 최소 runtime vocabulary 확인
+### 1. runtime vocabulary와 상태 canonical 확인
 우선 읽을 문서:
-- `../ontology/minimal-runtime-model.md`
+- `../phase/foundation-ontology.md`
 
 확인할 것:
 - 최소 runtime vocabulary와 canonical 상태 6개가 우리 저장소의 로컬 이름/상태와 어떻게 대응되는지
@@ -163,7 +162,7 @@ canonical decision:
 
 ## 관련 문서
 - `../../AGENTS.md`
-- `../ontology/minimal-runtime-model.md`
+- `../phase/foundation-ontology.md`
 - `../engine/supervisor-structure.md`
 - `../engine/execution-trace-structure.md`
 - `../engine/policy-permission-structure.md`

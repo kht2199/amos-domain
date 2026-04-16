@@ -11,12 +11,12 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 ## Immediate Alignment — 지금 바로 연결할 것
 ### 1. 용어와 최소 모델 고정
 - `Request`, `Task`, `ToolCall`, `Policy`, `ClarifyRequest`, `ExecutionTrace` 용어를 현재 코드와 대조
-- canonical 정의는 `../ontology/minimal-runtime-model.md`를 기준으로 삼는다
+- canonical 정의는 `../phase/foundation-ontology.md`를 기준으로 삼는다
 - supervisor / API 응답 / trace 이벤트에서 같은 의미를 같은 이름 또는 명시적 alias로 부르도록 정리
 - 저장소별 개념 ↔ 코드 매핑 문서 작성 기준 확정
 
 ### 2. 최소 상태 집합 정리
-- canonical 상태 집합의 기준 문서는 `../ontology/minimal-runtime-model.md`다.
+- canonical 상태 집합의 기준 문서는 `../phase/foundation-ontology.md`다.
 - `pending`
 - `clarifying`
 - `executing`

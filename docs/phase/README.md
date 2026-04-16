@@ -11,6 +11,6 @@
 - `../ontology/foundation-ontology.md` — 현재 foundation ontology 기준
 
 ## 원칙
-- ontology 개념/관계와 runtime vocabulary 기준은 `../ontology/`가 소유한다.
+- ontology 개념/관계와 도메인 객체/요청 상태 기준은 `../ontology/`가 소유한다.
 - 이 폴더는 단계별 engine/scenario active 문서를 모으는 구조용 폴더다.
 - roadmap와 checklist는 각각 `../roadmap/`에서 계속 소유한다.

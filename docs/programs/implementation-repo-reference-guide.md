@@ -27,21 +27,24 @@
 먼저 확인할 것:
 - `../ontology/semiconductor-amhs.md`
 - `../ontology/foundation-ontology.md`
+- `../ontology/agent-request-interpretation.md`
 - 루트 `README.md`
 
 이 단계의 목적:
 - 구현 저장소로 내려오기 전에 ontology 자체의 개념/관계/ownership 경계를 먼저 고정한다.
 
-### 1. runtime vocabulary와 상태 canonical 확인
+### 1. ontology와 request 상태 기준 확인
 우선 읽을 문서:
 - `../ontology/foundation-ontology.md`
+- `../ontology/agent-request-interpretation.md`
 
 확인할 것:
-- 최소 runtime vocabulary와 canonical 상태 6개가 우리 저장소의 로컬 이름/상태와 어떻게 대응되는지
+- 도메인 객체/상태 축이 우리 저장소의 로컬 모델과 어떻게 대응되는지
+- request 상태 canonical 6개가 우리 저장소의 로컬 이름/상태와 어떻게 대응되는지
 
 질문:
-- 우리 저장소에서 위 개념은 어떤 로컬 이름으로 나타나는가?
-- 상태 6개는 어디에서 어떻게 대응되는가?
+- 우리 저장소에서 도메인 객체 개념은 어떤 로컬 이름으로 나타나는가?
+- request 상태 6개는 어디에서 어떻게 대응되는가?
 - 없는 개념은 무엇인가?
 - 부분 대응만 되는 것은 무엇인가?
 
@@ -135,7 +138,7 @@ canonical decision:
 ## 역할별 안내 방식
 ### orchestration / assistant surface
 - 자연어 요청 해석, clarify, supervisor, trace, request log 자산을 본다.
-- domain 문서를 보고 runtime vocabulary / 상태 / trace / policy 의미를 맞춘다.
+- domain 문서를 보고 도메인 객체/상태, request 상태, trace/policy 의미를 맞춘다.
 - 다만 실제 class / state / event 이름은 해당 저장소의 로컬 문서가 소유한다.
 
 ### execution / integration surface

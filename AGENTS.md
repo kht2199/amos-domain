@@ -24,7 +24,7 @@
 
 ## 문서 정리 원칙
 
-- `docs/ontology/foundation-ontology.md` 를 foundation ontology + runtime vocabulary / 상태 canonical 기준으로 우선 참조한다.
+- `docs/ontology/foundation-ontology.md` 를 foundation ontology + 도메인 객체/상태 기준으로 우선 참조하고, request 해석/상태는 `docs/ontology/agent-request-interpretation.md`를 함께 본다.
 - `docs/roadmap/ontology-implementation-checklist.md` 는 현재 foundation active checklist이고, `implementation-repo-reference-guide.md` 는 읽는 순서와 질문을 안내하는 guide다.
 - `docs/ontology/foundation-ontology.md` 는 큰 그림과 관계를, `docs/phase/foundation-engine.md` 는 엔진 구조와 observability 관점을 담당한다.
 - Honcho 같은 agent 운영용 기억/맥락 회수 메커니즘은 canonical docs에 퍼뜨리지 말고, 필요하면 `AGENTS.md` 같은 작업 규칙 문서에서만 다룬다.

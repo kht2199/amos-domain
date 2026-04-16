@@ -6,7 +6,8 @@
 이 문서는 AMOS를 문서용이 아니라 **실제로 잘 동작하게 만들기 위한 운영 원칙**을 정리한다.
 
 ## 0. 먼저 볼 문서
-- runtime vocabulary / 상태 canonical: `../ontology/foundation-ontology.md`
+- 도메인 객체/상태 기준: `../ontology/foundation-ontology.md`
+- request 해석 / request 상태 canonical: `../ontology/agent-request-interpretation.md`
 - foundation 엔진 구조: `../phase/foundation-engine.md`
 - active checklist: `../roadmap/ontology-implementation-checklist.md`
 - 구현 저장소 참고 순서: `../programs/implementation-repo-reference-guide.md`
@@ -36,9 +37,10 @@
 
 ## 3. Foundation은 최소 의미 체계에 집중한다
 지금 당장 반드시 맞춰야 하는 축만 유지한다.
-- entity: Carrier / Lot / Equipment / Fab / Request / Task / ExecutionTrace
+- domain entity: Carrier / Lot / Equipment / Fab
+- request state: pending / clarifying / executing / completed / blocked / failed
+- execution semantics: request / task / trace / policy는 별도 agent/engine 문서에서 정렬
 - equipment type: AGV / STK / CNV / LFT
-- state: pending / clarifying / executing / completed / blocked / failed
 - event: stream_start / plan_update / agent_start / tool_call / tool_result / clarify / trace / error / done
 - policy: completed/failed task 불변, 단일 active task, failed 이후 무리한 후속 실행 금지, approval guard
 

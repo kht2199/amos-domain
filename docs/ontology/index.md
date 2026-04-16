@@ -1,24 +1,26 @@
 # Ontology Index
 
 ## 이 폴더의 역할
-반도체/AMOS 관련 의미 체계, ontology 기준, runtime vocabulary 기준을 이 폴더 안에서 active하게 관리한다.
+반도체/AMOS 관련 의미 체계와 ontology 기준 문서를 이 폴더 안에서 active하게 관리한다.
 
 이 인덱스는 **ontology 폴더 내부 기준**만 빠르게 보여준다.
 폴더 바깥 문서 읽기 순서나 구현 저장소 self-check 안내는 여기서 소유하지 않는다.
 
 ## 이 폴더 안의 확인 순서
 1. `semiconductor-amhs.md`에서 반도체/AMHS 상위 개념을 먼저 확인한다.
-2. `foundation-ontology.md`에서 현재 foundation ontology 범위, 관계, 해석 축, runtime vocabulary와 최소 상태 canonical을 함께 확인한다.
-3. 루트 `README.md`에서 ontology 문서와 다른 층위 문서의 ownership 경계를 확인한다.
+2. `foundation-ontology.md`에서 현재 foundation ontology 범위, 관계, 도메인 상태 축을 확인한다.
+3. `agent-request-interpretation.md`에서 agent/orchestration 관점의 질의 해석 축과 request 상태 canonical을 확인한다.
+4. 루트 `README.md`에서 ontology 문서와 다른 층위 문서의 ownership 경계를 확인한다.
 
 ## 문서
 - `semiconductor-amhs.md` — 반도체/AMHS 상위 개념
-- `foundation-ontology.md` — 현재 foundation ontology 기준 + runtime vocabulary / 최소 상태 canonical
+- `foundation-ontology.md` — 현재 foundation ontology 기준 + 도메인 객체/상태 축
+- `agent-request-interpretation.md` — 자연어 요청의 intent / target / missing-slot 해석 축 + request 상태 canonical
 - 루트 `README.md` — ontology 문서와 타 문서 층위의 ownership 경계 설명
 
 
 ## 원칙
 - 공통 개념은 여기서 정의한다.
 - 구현 프로젝트가 생겨도 핵심 용어는 여기 기준을 참조한다.
-- 새로운 용어는 ontology 관계와 최소 runtime vocabulary에 연결될 때만 승격한다.
+- 새로운 용어는 ontology 관계 또는 별도 agent/engine 문서의 canonical 축에 연결될 때만 승격한다.
 - 저장소별 클래스/필드/API와의 구체적 매핑표는 각 구현 저장소에서 관리한다.

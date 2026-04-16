@@ -1,6 +1,6 @@
 # AMOS Domain Foundation
 
-AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program boundary, roadmap를 한곳에서 관리하는 domain source-of-truth 저장소다.
+AMOS의 반도체/AMHS ontology, agent/runtime 의미 체계, scenario, program boundary, roadmap를 한곳에서 관리하는 domain source-of-truth 저장소다.
 
 ## 이 저장소가 소유하는 것
 - 반도체/AMOS 공통 개념과 관계
@@ -24,6 +24,7 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 1. [docs/ontology/index.md](docs/ontology/index.md)
 2. [docs/ontology/semiconductor-amhs.md](docs/ontology/semiconductor-amhs.md)
 3. [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md)
+4. [docs/ontology/agent-request-interpretation.md](docs/ontology/agent-request-interpretation.md)
 
 #### Step B. ontology를 사용하는 active 문서를 본다
 6. [docs/engine/practical-principles.md](docs/engine/practical-principles.md)
@@ -51,7 +52,8 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 
 #### Ontology
 - [docs/ontology/semiconductor-amhs.md](docs/ontology/semiconductor-amhs.md) — 반도체/AMHS 상위 개념
-- [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md) — 현재 foundation ontology 기준 + runtime vocabulary / 상태 canonical
+- [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md) — 현재 foundation ontology 기준 + 도메인 객체/상태 축
+- [docs/ontology/agent-request-interpretation.md](docs/ontology/agent-request-interpretation.md) — agent/orchestration 관점의 질의 해석 축
 
 #### Engine / runtime principles
 - [docs/engine/practical-principles.md](docs/engine/practical-principles.md) — runtime / trace / policy 실전 원칙
@@ -104,7 +106,8 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 
 ### domain repo가 제공하는 기준
 - 구현 저장소용 읽는 순서 / self-check 질문 → [docs/programs/implementation-repo-reference-guide.md](docs/programs/implementation-repo-reference-guide.md)
-- runtime vocabulary / 상태 → [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md)
+- 도메인 객체 / 상태 축 → [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md)
+- request 해석 / request 상태 canonical → [docs/ontology/agent-request-interpretation.md](docs/ontology/agent-request-interpretation.md)
 - supervisor 구조 → [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md)
 - trace semantics → [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md)
 - policy / permission semantics → [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md)

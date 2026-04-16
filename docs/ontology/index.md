@@ -9,12 +9,12 @@
 ## 이 폴더 안의 확인 순서
 1. `semiconductor-amhs.md`에서 반도체/AMHS 상위 개념을 먼저 확인한다.
 2. `foundation-ontology.md`에서 현재 foundation ontology 범위, 관계, 해석 축, runtime vocabulary와 최소 상태 canonical을 함께 확인한다.
-3. `source-of-truth.md`에서 ontology 문서와 다른 층위 문서의 ownership 경계를 확인한다.
+3. 루트 `README.md`에서 ontology 문서와 다른 층위 문서의 ownership 경계를 확인한다.
 
 ## 문서
 - `semiconductor-amhs.md` — 반도체/AMHS 상위 개념
 - `foundation-ontology.md` — 현재 foundation ontology 기준 + runtime vocabulary / 최소 상태 canonical
-- `source-of-truth.md` — ontology 문서와 타 문서 층위의 ownership / source-of-truth 규칙
+- 루트 `README.md` — ontology 문서와 타 문서 층위의 ownership 경계 설명
 
 
 ## 원칙

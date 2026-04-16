@@ -9,7 +9,7 @@
 - Foundation에서 우선 맞춰야 하는 범위와 순서는 `../roadmap/ontology-implementation-checklist.md`를 따른다.
 - 이 문서는 특정 저장소의 enum, payload, middleware, approval API schema를 canonical로 고정하지 않는다.
 - 이 문서의 역할은 어떤 정책 판단이 필요한지, 그 판단이 `Request` / `Task` / `Policy` / `ClarifyRequest` / `ExecutionTrace` / runtime state와 어떻게 연결되는지 정의하는 것이다.
-- 구현 저장소는 자신의 API / state / event / audit log 구조에서 이를 표현하며, ownership boundary는 `../ontology/source-of-truth.md`를 따른다.
+- 구현 저장소는 자신의 API / state / event / audit log 구조에서 이를 표현하며, ownership boundary는 루트 `README.md`의 소유 범위 설명을 따른다.
 
 ## 위치
 `Policy / Permission` 계층은 AMOS에서 다음 위치를 가진다.

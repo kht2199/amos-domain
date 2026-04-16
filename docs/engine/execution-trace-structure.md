@@ -9,7 +9,7 @@
 - Foundation에서 우선 맞춰야 하는 범위와 순서는 `../roadmap/ontology-implementation-checklist.md`를 따른다.
 - 이 문서는 특정 저장소의 event payload, DB schema, JSON field를 canonical로 고정하지 않는다.
 - 이 문서의 역할은 어떤 판단/실행 근거가 trace에 남아야 하는지, 그 근거가 `Request` / `Task` / `ToolCall` / `Policy` / `ClarifyRequest`와 어떻게 연결되는지 정의하는 것이다.
-- 구체 구현은 각 저장소가 자신의 event stream / request log / trace entry 구조에서 관리하며, ownership boundary는 `../ontology/source-of-truth.md`를 따른다.
+- 구체 구현은 각 저장소가 자신의 event stream / request log / trace entry 구조에서 관리하며, ownership boundary는 루트 `README.md`의 소유 범위 설명을 따른다.
 
 ## 위치
 `ExecutionTrace`는 AMOS에서 다음 위치를 가진다.

@@ -257,7 +257,7 @@ foundation에서 canonical로 맞출 최소 상태는 아래 6개다.
 - 이 문서는 ontology의 개념, 관계, 해석 축, 최소 경계를 정의한다.
 - runtime vocabulary와 상태 canonical도 이 문서가 함께 소유한다.
 - 이 문서는 구현 저장소별 클래스/필드/API 이름이나 concept-to-code mapping을 소유하지 않는다.
-- 상세 ownership / source-of-truth 규칙은 `../ontology/source-of-truth.md`를 따른다.
+- 상세 ownership 경계 설명은 `../../README.md`를 따른다.
 
 ## 이후 확장 방향
 다음은 다음 단계에서 ontology를 더 세분화할 때의 후보 축이다.

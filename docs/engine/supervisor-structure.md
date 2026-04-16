@@ -9,7 +9,7 @@
 - Foundation에서 지금 당장 맞춰야 하는 범위와 우선순위는 `../roadmap/ontology-implementation-checklist.md`를 우선 기준으로 본다.
 - 이 문서는 구현 저장소의 구체 클래스/필드/schema를 canonical로 고정하지 않는다.
 - 이 문서의 역할은 supervisor가 어떤 판단 축을 가져야 하는지, 그 판단이 `Request` / `Task` / `Policy` / `ClarifyRequest` / `ExecutionTrace`와 어떻게 연결되는지 정의하는 것이다.
-- 구체 구현은 각 저장소가 자신의 state / event / API / trace 구조에서 관리하며, ownership boundary는 `../ontology/source-of-truth.md`를 따른다.
+- 구체 구현은 각 저장소가 자신의 state / event / API / trace 구조에서 관리하며, ownership boundary는 루트 `README.md`의 소유 범위 설명을 따른다.
 
 ## 위치
 Supervisor는 AMOS에서 다음 위치를 차지한다.

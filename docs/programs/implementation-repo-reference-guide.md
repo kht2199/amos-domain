@@ -27,7 +27,7 @@
 먼저 확인할 것:
 - `../ontology/semiconductor-amhs.md`
 - `../ontology/foundation-ontology.md`
-- `../ontology/source-of-truth.md`
+- 루트 `README.md`
 
 이 단계의 목적:
 - 구현 저장소로 내려오기 전에 ontology 자체의 개념/관계/ownership 경계를 먼저 고정한다.

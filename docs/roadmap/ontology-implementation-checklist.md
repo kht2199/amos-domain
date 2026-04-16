@@ -74,21 +74,13 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 - 옵션형 clarify 패턴 정리
 - 대표 clarify 예시 축적
 
-## 우선순위 추천
-### 바로 할 것
-1. supervisor 출력 구조 확장
-2. clarify를 missing slot 기반으로 정리
-3. execution trace 최소 스키마 정의
-4. permission decision 최소 레이어 추가
+## 실행 순서 참고
+실행 우선순위와 남은 작업 목록은 `implementation-roadmap.md`를 따른다.
 
-### 그다음 할 것
-5. entity-aware retrieval 최소 도입
-6. trust level / source metadata 정리
-7. clarify 패턴 라이브러리화
-
-### 나중에 할 것
-8. meta-ontology 축적
-9. simulator / digital twin 확장 구조 반영
+이 체크리스트는
+- 어떤 semantic alignment 축을 언제 정리할지
+- Phase 1~6에서 무엇을 완료 기준으로 볼지
+를 고정하는 문서로 유지한다.
 
 ## 현재 domain 문서 사용 순서
 구현 저장소가 실제 읽는 순서와 self-check 질문은 `../programs/implementation-repo-reference-guide.md`를 따른다.

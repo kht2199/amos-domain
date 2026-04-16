@@ -8,4 +8,5 @@
 - `engine/` — runtime, trace, policy, supervisor, 구조적 지능 전략
 - `scenarios/` — replay/synthetic/오류 주입 전 단계 시나리오
 - `programs/` — 여러 구현 저장소와의 연결 지도, 구현 저장소 참고 가이드
-- `roadmap/` — phase별 실행 계획, active checklist, 과도기 요약
+- `roadmap/` — phase별 실행 계획, active checklist
+- `archive/` — history / transitional notes

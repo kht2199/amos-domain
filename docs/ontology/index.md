@@ -7,16 +7,14 @@
 폴더 바깥 문서 읽기 순서나 구현 저장소 self-check 안내는 여기서 소유하지 않는다.
 
 ## 이 폴더 안의 확인 순서
-1. `semiconductor-amhs.md`에서 반도체/AMHS 상위 개념을 먼저 확인한다.
-2. `foundation-ontology.md`에서 현재 foundation ontology 범위, 관계, 도메인 상태 축을 확인한다.
-3. `agent-request-interpretation.md`에서 agent/orchestration 관점의 질의 해석 축과 request 상태 canonical을 확인한다.
-4. 루트 `README.md`에서 ontology 문서와 다른 층위 문서의 ownership 경계를 확인한다.
+1. `semiconductor-amhs.md`
+2. `foundation-ontology.md`
+3. `agent-request-interpretation.md`
 
 ## 문서
 - `semiconductor-amhs.md` — 반도체/AMHS 상위 개념
 - `foundation-ontology.md` — 현재 foundation ontology 기준 + 도메인 객체/상태 축
 - `agent-request-interpretation.md` — 자연어 요청의 intent / target / missing-slot 해석 축 + request 상태 canonical
-- 루트 `README.md` — ontology 문서와 타 문서 층위의 ownership 경계 설명
 
 
 ## 원칙

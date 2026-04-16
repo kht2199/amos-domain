@@ -3,7 +3,7 @@
 ## 작업 범위 원칙
 
 - 이 `domain` 저장소 작업에서는 ontology / engine / scenarios / programs / roadmap 문서를 active source-of-truth로 다룬다.
-- 사용자가 명시적으로 요청하지 않으면 `agent`, `backend`, `frontend`, `glb-editor` 같은 구현 저장소의 코드나 문서를 함께 수정하지 않는다.
+- 사용자가 명시적으로 요청하지 않으면 개별 구현 저장소의 코드나 문서를 함께 수정하지 않는다.
 - 구현 저장소의 클래스명, 필드명, API 경로, 이벤트 이름은 여기서 canonical로 고정하지 않는다.
 - 구현 세부 매핑은 각 저장소의 로컬 문서가 소유하고, 이 저장소는 개념/원칙/경계/상태 의미를 소유한다.
 - 이 저장소의 역할은 구현 저장소별 세부 구현안을 대신 정하는 것이 아니라, 각 저장소가 self-check 할 수 있도록 reference 자료, 읽는 순서, 점검 기준을 명확히 제공하는 것이다.
@@ -19,7 +19,7 @@
   - `docs/engine/execution-trace-structure.md`
   - `docs/engine/policy-permission-structure.md`
 - 위 3개 engine 문서는 Phase 2 full expansion reference이며, Phase 1에서는 self-check용 선참고 문서로 본다.
-- domain 문서는 canonical 의미와 판단 축을 제공하고, 저장소별 `docs/concept-code-mapping.md` 및 실제 코드/테스트가 로컬 구현 기준을 소유한다.
+- domain 문서는 canonical 의미와 판단 축을 제공하고, 각 구현 저장소의 로컬 mapping 문서 및 실제 코드/테스트가 로컬 구현 기준을 소유한다.
 - domain 저장소에는 저장소별 구현 매핑 표를 복제하지 말고, 필요한 경우 “무엇을 참고해야 하는지”와 “어떤 기준으로 보면 되는지”만 남긴다.
 
 ## 문서 정리 원칙

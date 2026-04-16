@@ -25,7 +25,7 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 - `failed`
 
 ### 3. 저장소별 개념 ↔ 코드 매핑 문서 정리
-- 각 구현 저장소(agent/backend/frontend 등)는 자신의 코드 구조 기준으로 매핑 문서를 유지한다.
+- 각 구현 저장소는 자신의 코드 구조 기준으로 매핑 문서를 유지한다.
 - domain은 매핑표 자체의 저장소가 아니라, 어떤 개념을 맞춰야 하는지 기준만 제공한다.
 - 매핑 문서에는 아래 항목을 포함한다.
   - domain concept
@@ -44,7 +44,7 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 - `clarify_options`
 
 완료 기준:
-- supervisor가 단순 next agent 선택을 넘어서 구조적 판단 결과를 낸다.
+- supervisor가 단순 다음 실행 주체 선택을 넘어서 구조적 판단 결과를 낸다.
 
 ## Phase 3 — Execution Trace 구조화
 - request intent

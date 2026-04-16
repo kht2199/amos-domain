@@ -1,8 +1,8 @@
 # Implementation Repo Reference Guide
 
 ## 목적
-이 문서는 `agent`, `backend`, `frontend`, `glb-editor` 같은 구현 저장소가
-AMOS domain 기준을 참고할 때 **무엇을 먼저 읽어야 하는지**, **어떤 기준으로 self-check 해야 하는지**를 안내한다.
+이 문서는 각 구현 저장소가 AMOS domain 기준을 참고할 때
+**무엇을 먼저 읽어야 하는지**, **어떤 기준으로 self-check 해야 하는지**를 안내한다.
 
 중요:
 - 이 문서는 구현 저장소의 구체 클래스명, 필드명, API 경로, 이벤트 이름을 canonical로 고정하지 않는다.
@@ -119,26 +119,26 @@ canonical decision:
 - 최종 구현 기준은 해당 저장소의 코드와 테스트다.
 - domain 문서는 semantic reference이고, 로컬 구현 ownership을 대체하지 않는다.
 
-## 저장소별 안내 방식
-### agent
+## 역할별 안내 방식
+### orchestration / assistant surface
 - 자연어 요청 해석, clarify, supervisor, trace, request log 자산을 본다.
 - domain 문서를 보고 runtime vocabulary / 상태 / trace / policy 의미를 맞춘다.
-- 다만 실제 class / state / event 이름은 agent 로컬 문서가 소유한다.
+- 다만 실제 class / state / event 이름은 해당 저장소의 로컬 문서가 소유한다.
 
-### backend
+### execution / integration surface
 - 현실 API / action / permission / metric / log 경계를 본다.
 - domain 문서를 보고 action safety, blocked vs failed, policy semantics를 맞춘다.
-- 실제 endpoint / DTO / service naming은 backend 로컬 기준을 따른다.
+- 실제 endpoint / DTO / service naming은 해당 저장소의 로컬 기준을 따른다.
 
-### frontend
+### operator / visualization surface
 - 사용자가 보는 clarify / confirm / trace / KPI / explainability 표면을 본다.
-- domain 문서를 보고 어떤 상태와 판단 축을 UI에서 드러내야 하는지 참고한다.
-- 실제 화면 구조와 component state는 frontend 로컬 기준을 따른다.
+- domain 문서를 보고 어떤 상태와 판단 축을 화면에서 드러내야 하는지 참고한다.
+- 실제 화면 구조와 component state는 해당 저장소의 로컬 기준을 따른다.
 
-### glb-editor
+### simulation / modeling surface
 - simulation/digital twin 쪽 자산과 직접 연결되는 object / scene / state 표현을 본다.
 - domain 문서를 보고 ontology 용어와 entity 의미를 참고한다.
-- 실제 데이터 구조와 editor interaction은 glb-editor 로컬 기준을 따른다.
+- 실제 데이터 구조와 interaction은 해당 저장소의 로컬 기준을 따른다.
 
 ## domain 저장소가 여기서 해야 할 일
 - reference 문서를 유지한다.

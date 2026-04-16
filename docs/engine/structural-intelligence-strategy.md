@@ -2,7 +2,7 @@
 
 > 이 문서는 **secondary strategy** 문서다. near-term active checklist나 canonical runtime contract를 직접 대체하지 않으며, 전체 문서 지도는 루트 [README.md](../../README.md)를 따른다.
 
-이 문서는 `agent/docs/archive/sos-summary.md` 에 있던 살아있는 전략 개념을 active 문서로 승격한 것이다.
+이 문서는 legacy structural strategy archive에 있던 살아있는 전략 개념을 active 문서로 승격한 것이다.
 
 ## 핵심 메시지
 AMOS는 단순한 문서 검색 챗봇이 아니라,

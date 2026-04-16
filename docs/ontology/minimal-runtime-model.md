@@ -13,7 +13,7 @@
 
 - 시작점: 사용자 입력 또는 시스템이 수용한 명시적 요청
 - 포함 가능 요소: intent, target entity, time scope, constraints, clarify 결과, execution outcome
-- 구현 포인트: agent/backend/frontend는 각자 request ID, stream ID, tracking ID 등을 둘 수 있지만, domain 의미는 동일하게 `하나의 요청 단위`로 본다.
+- 구현 포인트: 각 구현 저장소는 request ID, stream ID, tracking ID 등 서로 다른 로컬 식별자를 둘 수 있지만, domain 의미는 동일하게 `하나의 요청 단위`로 본다.
 
 ### Task
 `Request`를 처리하기 위해 나눈 내부 작업 단위.

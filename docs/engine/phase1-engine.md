@@ -53,7 +53,7 @@ Phase 1에서는 simulator 전체를 만드는 것이 아니라, 이후 simulato
 - runtime vocabulary와 canonical 상태 집합은 `../ontology/minimal-runtime-model.md`를 따른다.
 - 이 문서는 Phase 1 엔진 구조와 관찰 가능성 관점에서만 정리한다.
 - 세부 이벤트 payload, 저장 포맷, 구현별 화면 구성은 각 구현 저장소에서 관리한다.
-- 구현 저장소가 실제 반영 위치를 찾을 때는 `../programs/implementation-repo-reference-guide.md`와 각 저장소의 `concept-code-mapping.md`를 함께 본다.
+- 구현 저장소가 실제 반영 위치를 찾을 때는 `../programs/implementation-repo-reference-guide.md`와 각 저장소의 로컬 mapping 문서를 함께 본다.
 
 ## Phase 1 비포함
 - full discrete-event simulation

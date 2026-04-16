@@ -29,22 +29,18 @@
 - `../programs/project-classification.md` → 핵심 내용은 `../programs/program-map.md`로 통합
 
 ## 중복 정리 결과
-### agent 저장소
-기존 active 중복 문서:
-- `../agent/docs/amos-ontology-phase1.md`
-- `../agent/docs/amos-practical-principles.md`
+### legacy duplicate docs
+기존 다른 위치의 active 중복 문서는 내용을 유지하지 않고,
+canonical domain 문서를 가리키는 pointer 또는 archive reference로 재분류했다.
 
 현재 상태:
-- 두 파일 모두 내용을 유지하지 않고, canonical domain 문서를 가리키는 포인터 문서로 전환함.
-- `agent/README.md`, `agent/docs/GUIDE.md` 링크도 canonical domain 문서를 가리키도록 변경함.
+- 살아 있는 기준은 이 저장소의 canonical domain 문서에 모았다.
+- 외부 구현 저장소 쪽 문서는 local usage를 위한 pointer/reference 성격만 남긴다.
 
-### archive 문서
-다음 파일은 아직 archive/reference로 남아 있다.
-- `../agent/docs/archive/amos-ontology-draft-0.1.md`
-- `../agent/docs/archive/amos-ontology-implementation-checklist.md`
-- `../agent/docs/archive/sos-summary.md`
+### legacy archive docs
+초기 ontology draft, 초기 implementation checklist, 초기 structural strategy 메모는 아직 archive/reference로 남아 있다.
 
-이 파일들은 active source of truth가 아니다.
+이 문서들은 active source of truth가 아니다.
 필요한 개념만 선별해 domain 프로젝트로 승격한다.
 
 ### skill

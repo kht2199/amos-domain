@@ -3,7 +3,7 @@
 > 이 문서는 **governance / transitional** 문서다. primary domain canon 자체가 아니라, archive 문서의 승격/유지/폐기 판단을 관리한다.
 
 ## 목적
-`agent/docs/archive/` 에 남아 있는 반도체/AMOS ontology 관련 문서를 계속 보관만 할지, active 문서로 승격할 개념이 있는지 판단한다.
+legacy archive에 남아 있는 반도체/AMOS ontology 관련 문서를 계속 보관만 할지, active 문서로 승격할 개념이 있는지 판단한다.
 
 ## 판정 기준
 - **승격**: 앞으로도 계속 쓰일 개념이며 canonical domain 문서에 반영할 가치가 있음
@@ -13,9 +13,9 @@
 ## 파일별 판정
 | 파일 | 판정 | 이유 | 조치 |
 |---|---|---|---|
-| `agent/docs/archive/amos-ontology-draft-0.1.md` | 유지 + 부분 승격 완료 | retrieval/policy/trace/clarify 중심 사고는 여전히 유효하지만, active 문서와 구현 로드맵에 대부분 흡수됨 | archive로 유지하되, 남은 전략 메모만 active 문서로 선별 승격 |
-| `agent/docs/archive/amos-ontology-implementation-checklist.md` | 유지 + 부분 승격 완료 | 구현 체크리스트 성격은 살아 있으나 active roadmap로 옮기는 편이 맞음 | 핵심은 `docs/roadmap/ontology-implementation-checklist.md` 로 승격했고, 원본은 archive 유지 |
-| `agent/docs/archive/sos-summary.md` | 유지 + 부분 승격 필요 | 구조적 지능, GraphRAG, ReBAC, meta-ontology 같은 장기 방향성 메모는 여전히 가치가 있음 | active 전략 문서로 핵심만 승격하고, 원본은 archive 유지 |
+| 초기 ontology draft archive | 유지 + 부분 승격 완료 | retrieval/policy/trace/clarify 중심 사고는 여전히 유효하지만, active 문서와 구현 로드맵에 대부분 흡수됨 | archive로 유지하되, 남은 전략 메모만 active 문서로 선별 승격 |
+| 초기 implementation checklist archive | 유지 + 부분 승격 완료 | 구현 체크리스트 성격은 살아 있으나 active roadmap로 옮기는 편이 맞음 | 핵심은 `docs/roadmap/ontology-implementation-checklist.md` 로 승격했고, 원본은 archive 유지 |
+| 초기 structural strategy archive | 유지 + 부분 승격 필요 | 구조적 지능, GraphRAG, ReBAC, meta-ontology 같은 장기 방향성 메모는 여전히 가치가 있음 | active 전략 문서로 핵심만 승격하고, 원본은 archive 유지 |
 
 ## 이번에 승격한/연결한 항목
 ### 이미 active로 승격된 것

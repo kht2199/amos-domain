@@ -9,20 +9,8 @@
 중요:
 - 이 문서는 `docs/archive/` 아래의 과거 draft를 대체하는 현재 작업 기준이다.
 - 이 문서는 ontology의 **의미와 경계**를 우선 정의한다.
-- runtime 상태 canonical, engine 적용 원칙, 구현 self-check 절차는 하위 문서가 소유한다.
+- runtime 상태 canonical과 구현 적용 절차는 이 문서 밖의 하위 문서가 소유한다.
 - Phase 1에서는 거대한 지식그래프보다 **운영에 바로 쓰이는 공통 의미 체계**를 우선한다.
-
-## 현재 기준 문서
-Phase 1 ontology의 정식 기준은 이 저장소의 domain 문서다.
-
-- ontology 개념/관계: `./`
-- runtime vocabulary / 상태 canonical: `minimal-runtime-model.md`
-- 실행 원칙과 정책 의미: `../engine/`
-- 저장소 역할 경계: `../programs/`
-- 단계별 추진 순서: `../roadmap/`
-
-구현 저장소는 이 기준을 참조해 각자 자신의 코드 구조에 맞는 개념 ↔ 코드 매핑표를 별도로 유지한다.
-이 문서는 구현별 클래스/필드/API 이름을 정식 기준으로 소유하지 않는다.
 
 ---
 
@@ -45,7 +33,7 @@ Phase 1 ontology의 정식 기준은 이 저장소의 domain 문서다.
 
 참고:
 - canonical 용어 정의는 `minimal-runtime-model.md`를 따른다.
-- 구현 저장소의 로컬 이름, 클래스, event shape는 각 저장소가 별도로 소유한다.
+- 구현별 로컬 이름, 클래스, event shape는 이 문서의 범위가 아니다.
 
 Phase 1에서는 장비를 세분화하되, 코드 영향은 최소화한다.
 - `EquipmentType.AGV`
@@ -160,10 +148,8 @@ Phase 1에서는 자연어 요청을 아래 ontology 축으로 해석한다.
 ## 경계 원칙
 - 이 문서는 ontology의 개념, 관계, 해석 축, 최소 경계를 정의한다.
 - runtime 상태 canonical은 `minimal-runtime-model.md`가 소유한다.
-- 실전 원칙과 적용 판단은 `../engine/practical-principles.md`가 소유한다.
-- 엔진 구조는 `../engine/phase1-engine.md`가 소유한다.
-- 구현 저장소 self-check와 concept-to-code mapping은 `../programs/implementation-repo-reference-guide.md` 및 각 구현 저장소 로컬 문서가 소유한다.
-- 단계별 우선순위와 남은 작업은 `../roadmap/implementation-roadmap.md` 및 `../roadmap/ontology-implementation-checklist.md`를 따른다.
+- 이 문서는 구현 저장소별 클래스/필드/API 이름이나 concept-to-code mapping을 소유하지 않는다.
+- 상세 ownership / source-of-truth 규칙은 `source-of-truth.md`를 따른다.
 
 ## Phase 1 이후 확장 방향
 다음은 다음 단계에서 ontology를 더 세분화할 때의 후보 축이다.

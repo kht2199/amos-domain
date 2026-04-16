@@ -17,9 +17,9 @@
 ## engine 쪽 핵심 연결
 - `../engine/practical-principles.md` — runtime / trace / policy 실전 원칙
 - `../engine/phase1-engine.md` — Phase 1 엔진 구조
-- `../engine/supervisor-structure.md` — supervisor 구조 확장 기준
-- `../engine/execution-trace-structure.md` — execution trace 구조화 기준
-- `../engine/policy-permission-structure.md` — policy / permission 구조화 기준
+- `../engine/supervisor-structure.md` — supervisor 구조 확장 기준 *(Phase 2 expansion reference)*
+- `../engine/execution-trace-structure.md` — execution trace 구조화 기준 *(Phase 2 expansion reference)*
+- `../engine/policy-permission-structure.md` — policy / permission 구조화 기준 *(Phase 2 expansion reference)*
 
 ## 원칙
 - 공통 개념은 여기서 정의한다.

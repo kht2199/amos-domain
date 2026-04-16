@@ -29,11 +29,12 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 ### 2) 구현 저장소 정렬이 필요한 사람
 1. [docs/programs/implementation-repo-reference-guide.md](docs/programs/implementation-repo-reference-guide.md)
 2. [docs/ontology/minimal-runtime-model.md](docs/ontology/minimal-runtime-model.md)
-3. [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md)
-4. [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md)
-5. [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md)
-6. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
-7. 각 구현 저장소의 `AGENTS.md` / `README.md` / `docs/concept-code-mapping.md`
+3. [docs/roadmap/ontology-implementation-checklist.md](docs/roadmap/ontology-implementation-checklist.md)
+4. [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md) *(Phase 2 expansion reference)*
+5. [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md) *(Phase 2 expansion reference)*
+6. [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md) *(Phase 2 expansion reference)*
+7. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
+8. 각 구현 저장소의 `AGENTS.md` / `README.md` / `docs/concept-code-mapping.md`
 
 ### 3) 문서 정리/거버넌스 검토가 필요한 사람
 1. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
@@ -95,6 +96,10 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 핵심 Phase 1 canon은 아니지만, 장기 방향을 이해하는 데 유효한 문서다.
 
 - [docs/engine/structural-intelligence-strategy.md](docs/engine/structural-intelligence-strategy.md) — GraphRAG / ReBAC / meta-ontology / domain-first agent 방향
+
+### E-1. Active checklist
+Phase 1에서 지금 당장 맞춰야 하는 self-check 우선순위를 정리한 문서다.
+
 - [docs/roadmap/ontology-implementation-checklist.md](docs/roadmap/ontology-implementation-checklist.md) — domain과 구현 정렬을 위한 active checklist
 
 ## 구현 저장소와의 연결

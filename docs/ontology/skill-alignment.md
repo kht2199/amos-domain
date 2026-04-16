@@ -16,7 +16,6 @@
 - `../engine/supervisor-structure.md`
 - `../engine/execution-trace-structure.md`
 - `../engine/policy-permission-structure.md`
-- `../programs/implementation-repo-reference-guide.md`
 
 역할:
 - 현재 active source of truth
@@ -25,6 +24,14 @@
 
 참고:
 - `../engine/runtime-observability.md` 는 active canonical이 아니라 `../engine/phase1-engine.md`를 가리키는 pointer 문서다.
+
+### active reference guide
+위치:
+- `../programs/implementation-repo-reference-guide.md`
+
+역할:
+- canonical 문서를 구현 저장소가 어떤 순서로 읽고 self-check 할지 안내
+- semantic contract 자체를 새로 정의하지 않음
 
 ### skill
 위치:
@@ -71,3 +78,4 @@
 2. skill reference가 domain canonical과 충돌하면 domain을 우선한다.
 3. skill은 project source of truth가 아니라 해석 허브다.
 4. 프로젝트가 더 커지면 skill은 더 짧아지고, domain 문서는 더 풍부해져도 된다.
+5. canonical / reference guide / governance 전체 문서 지도는 루트 `README.md`를 primary hub로 본다.

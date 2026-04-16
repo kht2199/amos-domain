@@ -91,13 +91,12 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 9. simulator / digital twin 확장 구조 반영
 
 ## 현재 domain 문서 사용 순서
-domain 저장소에서 지금 우선 참고할 순서는 아래와 같다.
+구현 저장소가 실제 읽는 순서와 self-check 질문은 `../programs/implementation-repo-reference-guide.md`를 따른다.
 
-1. `../ontology/minimal-runtime-model.md`
-2. `../engine/supervisor-structure.md`
-3. `../engine/execution-trace-structure.md`
-4. `../engine/policy-permission-structure.md`
-5. `../programs/implementation-repo-reference-guide.md`
+이 문서는 문서 reading guide가 아니라,
+- 어떤 semantic alignment 축을 언제 정리할지
+- Phase 1~6에서 무엇을 완료 기준으로 볼지
+를 정리하는 roadmap / checklist 역할을 맡는다.
 
 중요:
 - domain은 의미 / 경계 / 판단 축 / 상태 canonical을 소유한다.

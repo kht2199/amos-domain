@@ -8,13 +8,17 @@
 ## 0. 먼저 볼 문서
 - runtime vocabulary / 상태 canonical: `../ontology/minimal-runtime-model.md`
 - Phase 1 엔진 구조: `phase1-engine.md`
-- supervisor 판단 축: `supervisor-structure.md`
-- execution trace 구조: `execution-trace-structure.md`
-- policy / permission 구조: `policy-permission-structure.md`
-- 구현 저장소 참고 순서: `../programs/implementation-repo-reference-guide.md`
 - active checklist: `../roadmap/ontology-implementation-checklist.md`
+- 구현 저장소 참고 순서: `../programs/implementation-repo-reference-guide.md`
+- supervisor 판단 축: `supervisor-structure.md` *(Phase 2 expansion reference)*
+- execution trace 구조: `execution-trace-structure.md` *(Phase 2 expansion reference)*
+- policy / permission 구조: `policy-permission-structure.md` *(Phase 2 expansion reference)*
 
 이 문서는 위 문서들을 실제로 운용할 때의 실전 원칙을 덧붙이는 위치다.
+
+중요:
+- Phase 1에서 지금 당장 맞춰야 하는 우선순위는 active checklist를 따른다.
+- supervisor / trace / policy-permission 문서는 현재 active checklist를 보조하는 Phase 2 expansion reference다.
 
 ## 1. 문서보다 런타임 정합성을 우선한다
 - README/GUIDE에 있는 용어와 실제 코드 의미가 다르면 코드를 기준으로 문서를 즉시 맞춘다.

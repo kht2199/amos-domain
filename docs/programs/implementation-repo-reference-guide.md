@@ -8,6 +8,8 @@ AMOS domain 기준을 참고할 때 **무엇을 먼저 읽어야 하는지**, **
 - 이 문서는 구현 저장소의 구체 클래스명, 필드명, API 경로, 이벤트 이름을 canonical로 고정하지 않는다.
 - 이 문서의 역할은 domain 저장소가 구현 세부안을 대신 설계하는 것이 아니라,
   각 저장소가 자기 코드와 로컬 문서 기준으로 자율적으로 반영할 수 있게 reference pack을 제공하는 것이다.
+- 이 문서는 semantic contract 자체를 새로 정의하지 않는다.
+- canonical 문서를 구현 저장소가 어떤 순서로 읽고 self-check 할지 안내하는 active reference guide다.
 - 저장소별 세부 concept-to-code mapping 표는 각 구현 저장소가 소유한다.
 
 ## 기본 원칙
@@ -22,19 +24,7 @@ AMOS domain 기준을 참고할 때 **무엇을 먼저 읽어야 하는지**, **
 - `../ontology/minimal-runtime-model.md`
 
 확인할 것:
-- `Request`
-- `Task`
-- `ToolCall`
-- `Policy`
-- `ClarifyRequest`
-- `ExecutionTrace`
-- canonical 상태 6개
-  - `pending`
-  - `clarifying`
-  - `executing`
-  - `completed`
-  - `blocked`
-  - `failed`
+- 최소 runtime vocabulary와 canonical 상태 6개가 우리 저장소의 로컬 이름/상태와 어떻게 대응되는지
 
 질문:
 - 우리 저장소에서 위 개념은 어떤 로컬 이름으로 나타나는가?
@@ -165,3 +155,6 @@ canonical decision:
 - `../engine/policy-permission-structure.md`
 - `../roadmap/ontology-implementation-checklist.md`
 - `program-map.md`
+
+분류 참고:
+- 이 문서는 primary semantic contract가 아니라, canonical 문서를 읽는 순서와 self-check 질문을 제공하는 active reference guide다.

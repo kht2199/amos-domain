@@ -19,8 +19,10 @@
 - `../engine/supervisor-structure.md`
 - `../engine/execution-trace-structure.md`
 - `../engine/policy-permission-structure.md`
-- `../programs/implementation-repo-reference-guide.md`
 - `source-of-truth.md`
+
+## 현재 active reference guide
+- `../programs/implementation-repo-reference-guide.md`
 
 ## 현재 pointer 문서
 - `../engine/runtime-observability.md` → 핵심 내용은 `../engine/phase1-engine.md`로 통합
@@ -49,6 +51,10 @@
 - skill은 빠른 참조, 해석 규칙, Honcho 안내를 제공한다.
 - active 기준은 domain repo 문서가 우선이다.
 - 과거 논의 맥락은 Honcho에서 찾는다.
+
+참고:
+- canonical / pointer / governance 전체 문서 지도는 루트 `README.md`를 primary hub로 본다.
+- 이 문서는 목록을 다시 정의하는 문서가 아니라, 현재 정리 상태와 남은 정리 대상을 추적하는 governance 문서다.
 
 ## 현재 남은 정리 대상
 1. archive 문서에서 더 승격할 개념이 실제로 남았는지 재판단

@@ -7,9 +7,12 @@ Phase 1에서는 simulator 전체를 만드는 것이 아니라, 이후 simulato
 - runtime vocabulary / 상태 canonical: `../ontology/minimal-runtime-model.md`
 - active checklist: `../roadmap/ontology-implementation-checklist.md`
 - 구현 저장소 참고 순서: `../programs/implementation-repo-reference-guide.md`
+- Phase 2 expansion reference: `supervisor-structure.md`, `execution-trace-structure.md`, `policy-permission-structure.md`
 
 중요:
 - 이 문서는 Phase 1 엔진의 의미 축을 설명한다.
+- Phase 1에서 지금 당장 맞춰야 하는 self-check 우선순위는 `../roadmap/ontology-implementation-checklist.md`를 따른다.
+- supervisor / execution trace / policy-permission 확장 문서는 Phase 2 full expansion reference로 선참고한다.
 - 저장소별 class / schema / event / API / state 이름은 각 구현 저장소의 로컬 문서가 소유한다.
 
 ## 핵심 엔진 축
@@ -21,7 +24,7 @@ Phase 1에서는 simulator 전체를 만드는 것이 아니라, 이후 simulato
 ### 2. Routing Engine
 - supervisor가 intent / target / missing slots를 보고 worker를 선택한다.
 - 정보가 부족하면 `clarifying` 상태로 전환하고 추가 입력을 요청한다.
-- supervisor 구조 확장의 domain 기준은 `supervisor-structure.md`를 따른다.
+- supervisor 구조 확장의 domain 기준은 `supervisor-structure.md`를 따른다. 다만 이 문서는 Phase 2 expansion reference다.
 
 ### 3. Execution Engine
 - worker agent가 tool 호출을 수행한다.
@@ -31,7 +34,7 @@ Phase 1에서는 simulator 전체를 만드는 것이 아니라, 이후 simulato
 - `stream_start → plan_update → agent_start → tool_call/tool_result → trace → done|error` 흐름을 관찰 가능하게 남긴다.
 - 관찰 단위는 request / stream / event / trace / request log다.
 - 이 흐름은 단순 UI 표시용이 아니라 replay / debugging / KPI / routing 개선의 기반이 된다.
-- execution trace 구조화의 domain 기준은 `execution-trace-structure.md`를 따른다.
+- execution trace 구조화의 domain 기준은 `execution-trace-structure.md`를 따른다. 다만 이 문서는 Phase 2 expansion reference다.
 - Phase 1에서는 최소한 아래를 측정 가능하게 하는 것을 목표로 한다.
   - first feedback latency
   - clarify rate
@@ -44,7 +47,7 @@ Phase 1에서는 simulator 전체를 만드는 것이 아니라, 이후 simulato
 - `failed` 발생 시 추가 실행을 억지로 이어가지 않음
 - 정보 부족 시 `clarifying` 우선
 - 정책/권한/안전 제약으로 진행 불가할 때는 `blocked`로 본다.
-- policy / permission 구조화의 domain 기준은 `policy-permission-structure.md`를 따른다.
+- policy / permission 구조화의 domain 기준은 `policy-permission-structure.md`를 따른다. 다만 이 문서는 Phase 2 expansion reference다.
 
 ## runtime / observability 메모
 - runtime vocabulary와 canonical 상태 집합은 `../ontology/minimal-runtime-model.md`를 따른다.

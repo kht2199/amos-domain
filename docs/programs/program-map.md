@@ -6,6 +6,10 @@
 구현 저장소가 domain 기준을 참고할 때의 읽는 순서와 self-check 질문은
 `implementation-repo-reference-guide.md`를 우선 참고한다.
 
+중요:
+- Phase 1에서 지금 당장 맞춰야 하는 우선순위는 `../roadmap/ontology-implementation-checklist.md`를 따른다.
+- `supervisor-structure.md`, `execution-trace-structure.md`, `policy-permission-structure.md`는 구현 저장소가 선참고하는 Phase 2 expansion reference다.
+
 ## 분류 기준
 
 ### 1. core

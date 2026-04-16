@@ -28,14 +28,16 @@ Phase 1 정렬이 필요하면 아래 순서로 읽는다.
 1. `minimal-runtime-model.md`
 2. `../engine/practical-principles.md`
 3. `../engine/phase1-engine.md`
-4. `../engine/supervisor-structure.md`
-5. `../engine/execution-trace-structure.md`
-6. `../engine/policy-permission-structure.md`
-7. `../roadmap/ontology-implementation-checklist.md`
-8. `../programs/implementation-repo-reference-guide.md`
+4. `../roadmap/ontology-implementation-checklist.md`
+5. `../programs/implementation-repo-reference-guide.md`
+6. `../engine/supervisor-structure.md` *(Phase 2 expansion reference)*
+7. `../engine/execution-trace-structure.md` *(Phase 2 expansion reference)*
+8. `../engine/policy-permission-structure.md` *(Phase 2 expansion reference)*
 
 중요:
 - 이 문서는 Phase 1 ontology의 큰 그림과 의미 체계를 설명한다.
+- Phase 1에서 지금 당장 맞춰야 하는 우선순위는 `../roadmap/ontology-implementation-checklist.md`를 따른다.
+- `supervisor-structure.md`, `execution-trace-structure.md`, `policy-permission-structure.md`는 Phase 2 full expansion reference로 선참고한다.
 - 저장소별 구현 매핑과 self-check 방식은 `../programs/implementation-repo-reference-guide.md` 및 각 구현 저장소의 로컬 문서가 소유한다.
 
 ---

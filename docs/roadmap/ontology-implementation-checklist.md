@@ -1,6 +1,6 @@
 # Ontology Implementation Checklist
 
-이 문서는 archive에 있던 `amos-ontology-implementation-checklist.md` 의 살아있는 내용을 domain 프로젝트의 active 로드맵으로 승격한 버전이다.
+이 문서는 archive에 있던 `amos-ontology-implementation-checklist.md`의 살아있는 내용을 domain 프로젝트의 active 로드맵으로 승격한 버전이다.
 
 ## 목적
 ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / retrieval에 점진적으로 연결한다.
@@ -10,14 +10,14 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 
 ## Immediate Alignment — 지금 바로 연결할 것
 ### 1. 용어와 최소 모델 고정
-- request-side 용어(`Request`, `ClarifyRequest`)와 request 상태 canonical을 현재 코드와 대조
-- `Task`, `ToolCall`, `Policy`, `ExecutionTrace`는 engine 문서 기준과 대조
-- canonical 정의는 `../ontology/agent-request-interpretation.md` 및 관련 engine 문서를 기준으로 삼는다
-- supervisor / API 응답 / trace 이벤트에서 같은 의미를 같은 이름 또는 명시적 alias로 부르도록 정리
-- 저장소별 개념 ↔ 코드 매핑 문서 작성 기준 확정
+- request 해석 축은 `../ontology/request-interpretation.md` 기준과 대조한다.
+- request-side 용어(`Request`, `ClarifyRequest`)와 request lifecycle 상태 canonical은 `../engine/request-lifecycle.md` 기준과 대조한다.
+- `Task`, `ToolCall`, `Policy`, `ExecutionTrace`는 engine 문서 기준과 대조한다.
+- supervisor / API 응답 / trace 이벤트에서 같은 의미를 같은 이름 또는 명시적 alias로 부르도록 정리한다.
+- 저장소별 개념 ↔ 코드 매핑 문서 작성 기준을 확정한다.
 
 ### 2. 최소 상태 집합 정리
-- canonical request 상태 집합의 기준 문서는 `../ontology/agent-request-interpretation.md`다.
+- canonical request 상태 집합의 기준 문서는 `../engine/request-lifecycle.md`다.
 - `pending`
 - `clarifying`
 - `executing`

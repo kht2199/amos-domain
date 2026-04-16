@@ -1,13 +1,13 @@
-# AMOS Ontology Foundation
+# AMOS Domain Foundation
 
-> 이 문서는 이제 AMOS 반도체 ontology의 active 기준 문서다.
+> 이 문서는 AMOS 반도체/AMHS ontology의 active 기준 문서다.
 > 기존 구현 저장소의 동명/유사 문서는 중복 방지를 위해 이 문서를 가리키는 포인터로만 유지한다.
 
 ## 목적
-이 문서는 AMOS의 반도체/AMHS 도메인 온톨로지를 **현재 foundation에서 먼저 고정해야 할 개념/관계 중심**으로 정리한 active 문서다.
+이 문서는 AMOS의 반도체/AMHS 도메인 온톨로지를 **현재 foundation에서 먼저 고정해야 할 개념과 관계** 중심으로 정리한 active 문서다.
 
 중요:
-- 이 문서는 `docs/archive/` 아래의 과거 draft를 대체하는 현재 작업 기준이다.
+- 이 문서는 `docs/archive/` 아래 과거 draft를 대체하는 현재 작업 기준이다.
 - 이 문서는 ontology의 **의미와 경계**를 우선 정의한다.
 - 도메인 객체와 도메인 상태 축까지를 ontology boundary 안에서 함께 정리한다.
 - 현재 foundation에서는 거대한 지식그래프보다 **운영에 바로 쓰이는 공통 의미 체계**를 우선한다.
@@ -29,7 +29,7 @@
 - `Request`, `Task`, `ToolCall`, `ClarifyRequest`, `ExecutionTrace`, `Policy` 같은 agent/orchestration 용어는 이 문서의 핵심 엔티티로 올리지 않는다.
 - 구현별 로컬 이름, 클래스, event shape는 이 문서의 범위가 아니다.
 
-현재 foundation에서는 장비를 세분화하되, 코드 영향은 최소화한다.
+현재 foundation에서는 장비를 세분화하되 코드 영향은 최소화한다.
 - `EquipmentType.AGV`
 - `EquipmentType.STK`
 - `EquipmentType.CNV`
@@ -47,7 +47,7 @@
 - Fab 레벨의 구역/가동 컨텍스트
 
 참고:
-- 요청 lifecycle(`pending`, `clarifying`, `executing`, `completed`, `blocked`, `failed`) 같은 agent 상태 canonical은 `agent-request-interpretation.md`와 engine 문서가 소유한다.
+- request lifecycle 상태 canonical은 `request-lifecycle.md`가 소유한다.
 
 ### 3) Event Layer
 도메인 상태 변화가 어떤 종류의 사건으로 표현되는지 정의한다.
@@ -76,10 +76,11 @@
 - 이 레이어는 domain이 안전 원칙과 불변식을 정의하는 위치다.
 
 ### 5) Domain Boundary Note
-이 foundation ontology는 반도체/AMHS 객체와 그 객체의 상태 축을 우선 소유한다.
+이 foundation 문서는 반도체/AMHS 객체와 그 객체의 상태 축을 우선 소유한다.
 
 별도 문서가 소유하는 것:
-- 자연어 요청 해석, clarify 분기, request 상태 canonical → `agent-request-interpretation.md`
+- 자연어 요청의 intent / target / scope / missing-slot 해석 축 → `request-interpretation.md`
+- request-side runtime vocabulary와 lifecycle 상태 canonical → `../engine/request-lifecycle.md`
 - supervisor / trace / policy / permission 구조 → `../engine/*.md`
 
 즉 `Request`, `Task`, `ToolCall`, `ClarifyRequest`, `ExecutionTrace` 같은 agent 실행 용어를
@@ -101,20 +102,15 @@ AMHS 객체 ontology와 같은 층위의 핵심 엔티티로 섞지 않는다.
 
 ---
 
-## agent 요청 해석
-자연어 요청 해석 축은 `agent-request-interpretation.md`로 분리한다.
-
-이 문서에는 domain 객체 ontology와 도메인 상태 축만 남기고,
-`intent / target entity / target scope / missing slots` 및 request lifecycle 같은 agent 해석 축은 별도 문서가 소유한다.
-
----
-
+## 연결 문서
+- 자연어 요청 해석 축: `request-interpretation.md`
+- request lifecycle 기준: `../engine/request-lifecycle.md`
+- 상세 ownership 경계 설명: `../../README.md`
 
 ## 경계 원칙
 - 이 문서는 ontology의 개념, 관계, 도메인 상태 축, 최소 경계를 정의한다.
 - request lifecycle, clarify 구조, trace/policy 실행 용어는 별도 문서가 소유한다.
 - 이 문서는 구현 저장소별 클래스/필드/API 이름이나 concept-to-code mapping을 소유하지 않는다.
-- 상세 ownership 경계 설명은 `../../README.md`를 따른다.
 
 ## 이후 확장 방향
 다음은 다음 단계에서 ontology를 더 세분화할 때의 후보 축이다.

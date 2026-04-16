@@ -6,14 +6,12 @@
 
 전제:
 - ontology 검증은 먼저 루트 `README.md`의 ontology-first 순서를 따라 끝낸 뒤 진행한다.
-- 이 문서는 ontology 자체를 검증하는 문서가 아니라, ontology를 구현 저장소 쪽에서 어떻게 받아서 self-check 할지 안내하는 문서다.
+- 이 문서는 ontology 자체를 검증하는 문서가 아니라, ontology와 engine 기준을 구현 저장소 쪽에서 어떻게 받아서 self-check 할지 안내하는 문서다.
 
 중요:
 - 이 문서는 구현 저장소의 구체 클래스명, 필드명, API 경로, 이벤트 이름을 canonical로 고정하지 않는다.
-- 이 문서의 역할은 domain 저장소가 구현 세부안을 대신 설계하는 것이 아니라,
-  각 저장소가 자기 코드와 로컬 문서 기준으로 자율적으로 반영할 수 있게 reference pack을 제공하는 것이다.
+- 이 문서의 역할은 domain 저장소가 구현 세부안을 대신 설계하는 것이 아니라, 각 저장소가 자기 코드와 로컬 문서 기준으로 자율적으로 반영할 수 있게 reference pack을 제공하는 것이다.
 - 이 문서는 semantic contract 자체를 새로 정의하지 않는다.
-- canonical 문서를 구현 저장소가 어떤 순서로 읽고 self-check 할지 안내하는 active reference guide다.
 - 저장소별 세부 concept-to-code mapping 표는 각 구현 저장소가 소유한다.
 
 ## 기본 원칙
@@ -26,90 +24,59 @@
 ### 0. ontology-first 확인 완료
 먼저 확인할 것:
 - `../ontology/semiconductor-amhs.md`
-- `../ontology/foundation-ontology.md`
-- `../ontology/agent-request-interpretation.md`
+- `../ontology/foundation.md`
+- `../ontology/request-interpretation.md`
 - 루트 `README.md`
 
 이 단계의 목적:
 - 구현 저장소로 내려오기 전에 ontology 자체의 개념/관계/ownership 경계를 먼저 고정한다.
 
-### 1. ontology와 request 상태 기준 확인
+### 1. ontology와 요청 해석 축 확인
 우선 읽을 문서:
-- `../ontology/foundation-ontology.md`
-- `../ontology/agent-request-interpretation.md`
+- `../ontology/foundation.md`
+- `../ontology/request-interpretation.md`
 
 확인할 것:
 - 도메인 객체/상태 축이 우리 저장소의 로컬 모델과 어떻게 대응되는지
-- request 상태 canonical 6개가 우리 저장소의 로컬 이름/상태와 어떻게 대응되는지
+- intent / entity / scope / missing-slot 해석 축이 어디에서 표현되는지
 
 질문:
 - 우리 저장소에서 도메인 객체 개념은 어떤 로컬 이름으로 나타나는가?
-- request 상태 6개는 어디에서 어떻게 대응되는가?
+- 요청 해석 축은 어떤 parser / classifier / router / UI 상태에서 드러나는가?
 - 없는 개념은 무엇인가?
 - 부분 대응만 되는 것은 무엇인가?
 
-### 2. supervisor 판단 축 확인
+### 2. request lifecycle 기준 확인
 우선 읽을 문서:
-- `../engine/supervisor-structure.md`
+- `../engine/request-lifecycle.md`
 
 확인할 것:
-- `intent`
-- `entity_candidates`
-- `missing_slots`
-- `risk_level`
-- `policy_precheck`
-- `clarify_question`
-- `clarify_options`
+- `Request`
+- `ClarifyRequest`
+- `pending / clarifying / executing / completed / blocked / failed`
 
 질문:
-- 우리 저장소는 어떤 판단 축을 직접 다루는가?
+- request 상태 6개는 어디에서 어떻게 대응되는가?
 - `clarifying / blocked / failed` 구분은 어디에서 표현되는가?
-- supervisor 또는 그에 준하는 결정 계층이 어떤 출력 shape를 가지는가?
-
-### 3. execution trace 기준 확인
-우선 읽을 문서:
-- `../engine/execution-trace-structure.md`
-
-확인할 것:
-- `request_intent`
-- `entity_candidates`
-- `missing_slots`
-- `policy_decision`
-- `task_transitions`
-- `tool_call_results`
-- `state_transition_reason`
-- `final_outcome`
-
-질문:
-- 위 정보 중 무엇이 event / trace / request log / stream에 남는가?
-- `clarifying / blocked / failed` 이유를 복기할 수 있는가?
 - request 단위 복기가 가능한가?
 
-### 4. policy / permission 기준 확인
+### 3. supervisor / trace / policy 기준 확인
 우선 읽을 문서:
+- `../engine/supervisor-structure.md`
+- `../engine/execution-trace-structure.md`
 - `../engine/policy-permission-structure.md`
 
 확인할 것:
-- `risk_tier`
-- `permission_context`
-- `policy_precheck`
-- `decision`
-- `decision_reason`
-- `confirmation_requirement`
-- `block_condition`
-
-canonical decision:
-- `allow`
-- `deny`
-- `confirm`
-- `clarify`
+- supervisor 판단 축
+- trace에 남겨야 할 구조 정보
+- policy / permission decision semantics
 
 질문:
-- 우리 저장소는 confirm과 clarify를 어떻게 구분하는가?
-- blocked와 failed를 어떤 규칙으로 나누는가?
+- 우리 저장소는 어떤 판단 축을 직접 다루는가?
+- 위 정보 중 무엇이 event / trace / request log / stream에 남는가?
 - approval / permission / safety 제약이 어디에 표현되는가?
 
-### 5. foundation checklist로 마무리 확인
+### 4. foundation checklist로 마무리 확인
 우선 읽을 문서:
 - `../roadmap/ontology-implementation-checklist.md`
 
@@ -138,7 +105,7 @@ canonical decision:
 ## 역할별 안내 방식
 ### orchestration / assistant surface
 - 자연어 요청 해석, clarify, supervisor, trace, request log 자산을 본다.
-- domain 문서를 보고 도메인 객체/상태, request 상태, trace/policy 의미를 맞춘다.
+- domain 문서를 보고 도메인 객체/상태, 요청 해석 축, request lifecycle 의미를 맞춘다.
 - 다만 실제 class / state / event 이름은 해당 저장소의 로컬 문서가 소유한다.
 
 ### execution / integration surface
@@ -165,7 +132,9 @@ canonical decision:
 
 ## 관련 문서
 - `../../AGENTS.md`
-- `../ontology/foundation-ontology.md`
+- `../ontology/foundation.md`
+- `../ontology/request-interpretation.md`
+- `../engine/request-lifecycle.md`
 - `../engine/supervisor-structure.md`
 - `../engine/execution-trace-structure.md`
 - `../engine/policy-permission-structure.md`

@@ -8,14 +8,13 @@
 
 ## 이 폴더 안의 확인 순서
 1. `semiconductor-amhs.md`
-2. `foundation-ontology.md`
-3. `agent-request-interpretation.md`
+2. `foundation.md`
+3. `request-interpretation.md`
 
 ## 문서
 - `semiconductor-amhs.md` — 반도체/AMHS 상위 개념
-- `foundation-ontology.md` — 현재 foundation ontology 기준 + 도메인 객체/상태 축
-- `agent-request-interpretation.md` — 자연어 요청의 intent / target / missing-slot 해석 축 + request 상태 canonical
-
+- `foundation.md` — 현재 foundation 기준의 도메인 객체/상태 축
+- `request-interpretation.md` — 자연어 요청의 intent / target / scope / missing-slot 해석 축
 
 ## 원칙
 - 공통 개념은 여기서 정의한다.

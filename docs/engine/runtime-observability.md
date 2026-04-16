@@ -4,8 +4,9 @@
 
 ## 현재 기준
 - foundation 엔진 구조와 observability 기준: `../phase/foundation-engine.md`
-- 도메인 객체/상태 기준: `../ontology/foundation-ontology.md`
-- request 해석 / request 상태 canonical: `../ontology/agent-request-interpretation.md`
+- 도메인 객체/상태 기준: `../ontology/foundation.md`
+- 요청 해석 축: `../ontology/request-interpretation.md`
+- request lifecycle 기준: `request-lifecycle.md`
 - 실전 운영 원칙과 불변식: `practical-principles.md`
 
 ## 메모

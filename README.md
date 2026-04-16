@@ -1,10 +1,10 @@
 # AMOS Domain Foundation
 
-AMOS의 반도체/AMHS ontology, agent/runtime 의미 체계, scenario, program boundary, roadmap를 한곳에서 관리하는 domain source-of-truth 저장소다.
+AMOS의 반도체/AMHS ontology, request/runtime 의미 체계, scenario, program boundary, roadmap를 한곳에서 관리하는 domain source-of-truth 저장소다.
 
 ## 이 저장소가 소유하는 것
 - 반도체/AMOS 공통 개념과 관계
-- runtime state / trace / policy / supervisor 의미 구조
+- request 해석 축과 request-side runtime semantics
 - 단계별 설계 기준과 roadmap
 - 구현 저장소들이 맞춰야 할 semantic alignment 기준
 
@@ -23,10 +23,11 @@ AMOS의 반도체/AMHS ontology, agent/runtime 의미 체계, scenario, program 
 #### Step A. ontology 자체를 먼저 본다
 1. [docs/ontology/index.md](docs/ontology/index.md)
 2. [docs/ontology/semiconductor-amhs.md](docs/ontology/semiconductor-amhs.md)
-3. [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md)
-4. [docs/ontology/agent-request-interpretation.md](docs/ontology/agent-request-interpretation.md)
+3. [docs/ontology/foundation.md](docs/ontology/foundation.md)
+4. [docs/ontology/request-interpretation.md](docs/ontology/request-interpretation.md)
 
 #### Step B. ontology를 사용하는 active 문서를 본다
+5. [docs/engine/request-lifecycle.md](docs/engine/request-lifecycle.md)
 6. [docs/engine/practical-principles.md](docs/engine/practical-principles.md)
 7. [docs/phase/foundation-engine.md](docs/phase/foundation-engine.md)
 8. [docs/phase/foundation-scenarios.md](docs/phase/foundation-scenarios.md)
@@ -44,61 +45,39 @@ AMOS의 반도체/AMHS ontology, agent/runtime 의미 체계, scenario, program 
 ### 2) 문서 정리/거버넌스 검토가 필요한 사람
 1. [AGENTS.md](AGENTS.md)
 
-
 ## 문서 지도: 역할별 분류
-
-### A. Canonical domain docs
-이 저장소의 핵심 active 기준 문서다.
-
-#### Ontology
+### A. Canonical ontology docs
 - [docs/ontology/semiconductor-amhs.md](docs/ontology/semiconductor-amhs.md) — 반도체/AMHS 상위 개념
-- [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md) — 현재 foundation ontology 기준 + 도메인 객체/상태 축
-- [docs/ontology/agent-request-interpretation.md](docs/ontology/agent-request-interpretation.md) — agent/orchestration 관점의 질의 해석 축
+- [docs/ontology/foundation.md](docs/ontology/foundation.md) — 현재 foundation 기준의 도메인 객체/상태 축
+- [docs/ontology/request-interpretation.md](docs/ontology/request-interpretation.md) — 자연어 요청의 intent / target / scope / missing-slot 해석 축
 
-#### Engine / runtime principles
+### B. Canonical engine / runtime docs
+- [docs/engine/request-lifecycle.md](docs/engine/request-lifecycle.md) — request-side runtime vocabulary와 lifecycle 상태 canonical
 - [docs/engine/practical-principles.md](docs/engine/practical-principles.md) — runtime / trace / policy 실전 원칙
 - [docs/phase/foundation-engine.md](docs/phase/foundation-engine.md) — foundation 엔진 구조
 
-#### Scenarios / programs / roadmap
+### C. Scenarios / programs / roadmap docs
 - [docs/phase/foundation-scenarios.md](docs/phase/foundation-scenarios.md) — scenario skeleton과 replay/synthetic 방향
 - [docs/programs/program-map.md](docs/programs/program-map.md) — domain과 구현 역할 층위 지도
 - [docs/roadmap/implementation-roadmap.md](docs/roadmap/implementation-roadmap.md) — 단계별 구현 로드맵
+- [docs/roadmap/ontology-implementation-checklist.md](docs/roadmap/ontology-implementation-checklist.md) — domain과 구현 정렬을 위한 active checklist
 
-### B. Canonical alignment / semantic contract docs
-구현 저장소들이 맞춰야 하는 semantic alignment 기준이다.
-이 문서들은 구현 세부 schema를 고정하지 않지만, **무엇을 맞춰야 하는지**를 고정한다.
-
+### D. Canonical alignment / semantic contract docs
 - [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md) — supervisor 구조 확장 기준
 - [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md) — execution trace 구조화 기준
 - [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md) — policy / permission 구조화 기준
+- [docs/programs/implementation-repo-reference-guide.md](docs/programs/implementation-repo-reference-guide.md) — 구현 저장소용 reference pack / self-check guide
 
-### B-1. Implementation reference guide
-구현 저장소가 self-check 할 때 참고할 읽는 순서와 질문을 제공하는 안내 문서다.
-
-- [docs/programs/implementation-repo-reference-guide.md](docs/programs/implementation-repo-reference-guide.md) — 구현 저장소용 reference pack / self-check 가이드
-
-### C. Pointer docs
-중복 canonical을 만들지 않기 위해 유지하는 포인터 문서다.
-새로운 active 내용을 여기서 계속 확장하지 않는다.
-
+### E. Pointer docs
 - [docs/engine/runtime-observability.md](docs/engine/runtime-observability.md) → 핵심 내용은 [docs/phase/foundation-engine.md](docs/phase/foundation-engine.md)
 - [docs/programs/project-classification.md](docs/programs/project-classification.md) → 핵심 내용은 [docs/programs/program-map.md](docs/programs/program-map.md)
 
-### D. Governance / transitional / history docs
-작업 규칙, archive 문서, 운영 메모처럼 primary domain canon 밖의 메타 정보를 담는다.
-
+### F. Governance / transitional / history docs
 - [docs/archive/today-discussion-summary.md](docs/archive/today-discussion-summary.md) — 대화 기반 과도기 요약 *(archive/history)*
 - [AGENTS.md](AGENTS.md) — 이 저장소에서 작업할 때의 운영 메모
 
-### E. Secondary strategy docs
-핵심 foundation canon은 아니지만, 장기 방향을 이해하는 데 유효한 문서다.
-
+### G. Secondary strategy docs
 - [docs/engine/structural-intelligence-strategy.md](docs/engine/structural-intelligence-strategy.md) — GraphRAG / ReBAC / meta-ontology / domain-first agent 방향
-
-### E-1. Active checklist
-현재 foundation에서 지금 당장 맞춰야 하는 self-check 우선순위를 정리한 문서다.
-
-- [docs/roadmap/ontology-implementation-checklist.md](docs/roadmap/ontology-implementation-checklist.md) — domain과 구현 정렬을 위한 active checklist
 
 ## 구현 저장소와의 연결
 이 저장소는 구현 저장소의 code mapping을 직접 소유하지 않는다.
@@ -106,8 +85,9 @@ AMOS의 반도체/AMHS ontology, agent/runtime 의미 체계, scenario, program 
 
 ### domain repo가 제공하는 기준
 - 구현 저장소용 읽는 순서 / self-check 질문 → [docs/programs/implementation-repo-reference-guide.md](docs/programs/implementation-repo-reference-guide.md)
-- 도메인 객체 / 상태 축 → [docs/ontology/foundation-ontology.md](docs/ontology/foundation-ontology.md)
-- request 해석 / request 상태 canonical → [docs/ontology/agent-request-interpretation.md](docs/ontology/agent-request-interpretation.md)
+- 도메인 객체 / 상태 축 → [docs/ontology/foundation.md](docs/ontology/foundation.md)
+- request 해석 축 → [docs/ontology/request-interpretation.md](docs/ontology/request-interpretation.md)
+- request lifecycle 기준 → [docs/engine/request-lifecycle.md](docs/engine/request-lifecycle.md)
 - supervisor 구조 → [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md)
 - trace semantics → [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md)
 - policy / permission semantics → [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md)
@@ -129,11 +109,10 @@ AMOS의 반도체/AMHS ontology, agent/runtime 의미 체계, scenario, program 
 - 구현/매핑 기준은 각 구현 저장소의 실제 코드와 테스트가 우선이다.
 - archive 문서는 역사/참고용이며 active 판단 근거로 직접 쓰지 않는다.
 
-
 ## 디렉토리 구조
 - `docs/ontology/` — ontology 기준 문서와 반도체/AMHS 상위 개념
-- `docs/engine/` — runtime / trace / policy / supervisor / 전략 문서
-- `docs/scenarios/` — replay/synthetic/오류 주입 전 단계 시나리오
+- `docs/engine/` — request lifecycle, runtime, trace, policy, supervisor, 전략 문서
+- `docs/phase/` — foundation 단계의 engine/scenario active 문서
 - `docs/programs/` — 구현 저장소와의 책임 연결 지도
 - `docs/roadmap/` — 단계 roadmap, active checklist
 - `docs/archive/` — history / transitional notes
@@ -143,7 +122,9 @@ AMOS의 반도체/AMHS ontology, agent/runtime 의미 체계, scenario, program 
 최소한 아래를 반영한다.
 
 1. 새 문서가 어느 역할인지 분류
-   - canonical domain
+   - canonical ontology
+   - canonical engine / runtime
+   - scenarios / programs / roadmap
    - canonical alignment / semantic contract
    - pointer
    - governance / transitional / history

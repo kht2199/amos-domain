@@ -7,10 +7,12 @@
 - `foundation-engine.md` — 현재 foundation engine 기준
 - `foundation-scenarios.md` — 현재 foundation scenario skeleton
 
-관련 ontology 기준 문서:
-- `../ontology/foundation-ontology.md` — 현재 foundation ontology 기준
+관련 기준 문서:
+- `../ontology/foundation.md` — 현재 foundation 도메인 기준
+- `../engine/request-lifecycle.md` — request lifecycle 기준
 
 ## 원칙
-- ontology 개념/관계와 도메인 객체/요청 상태 기준은 `../ontology/`가 소유한다.
+- ontology 개념/관계와 도메인 객체/요청 해석 축은 `../ontology/`가 소유한다.
+- request-side runtime vocabulary와 상태 canonical은 `../engine/request-lifecycle.md`가 소유한다.
 - 이 폴더는 단계별 engine/scenario active 문서를 모으는 구조용 폴더다.
 - roadmap와 checklist는 각각 `../roadmap/`에서 계속 소유한다.

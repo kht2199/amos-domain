@@ -4,6 +4,10 @@
 이 문서는 각 구현 저장소가 AMOS domain 기준을 참고할 때
 **무엇을 먼저 읽어야 하는지**, **어떤 기준으로 self-check 해야 하는지**를 안내한다.
 
+전제:
+- ontology 검증은 먼저 루트 `README.md`의 ontology-first 순서를 따라 끝낸 뒤 진행한다.
+- 이 문서는 ontology 자체를 검증하는 문서가 아니라, ontology를 구현 저장소 쪽에서 어떻게 받아서 self-check 할지 안내하는 문서다.
+
 중요:
 - 이 문서는 구현 저장소의 구체 클래스명, 필드명, API 경로, 이벤트 이름을 canonical로 고정하지 않는다.
 - 이 문서의 역할은 domain 저장소가 구현 세부안을 대신 설계하는 것이 아니라,
@@ -19,6 +23,16 @@
 - 구현 저장소는 domain 기준을 참고하되, 실제 반영 방식은 각 저장소가 자율적으로 결정한다.
 
 ## 공통 읽는 순서
+### 0. ontology-first 확인 완료
+먼저 확인할 것:
+- `../ontology/common-semiconductor-amhs.md`
+- `../ontology/phase1.md`
+- `../ontology/minimal-runtime-model.md`
+- `../ontology/source-of-truth.md`
+
+이 단계의 목적:
+- 구현 저장소로 내려오기 전에 ontology 자체의 개념/관계/ownership 경계를 먼저 고정한다.
+
 ### 1. 최소 runtime vocabulary 확인
 우선 읽을 문서:
 - `../ontology/minimal-runtime-model.md`

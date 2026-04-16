@@ -17,30 +17,35 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 이 저장소는 **무엇이 어떤 의미를 가지는지**를 소유한다.
 
 ## 빠른 시작 경로
-### 1) 처음 보는 사람
-1. [AGENTS.md](AGENTS.md)
-2. [docs/ontology/index.md](docs/ontology/index.md)
+### 1) ontology부터 먼저 검증하고 싶은 사람
+다음 순서로 읽으면 **온톨로지 정의 → 이를 사용하는 문서** 순서로 검증할 수 있다.
+
+#### Step A. ontology 자체를 먼저 본다
+1. [docs/ontology/index.md](docs/ontology/index.md)
+2. [docs/ontology/common-semiconductor-amhs.md](docs/ontology/common-semiconductor-amhs.md)
 3. [docs/ontology/phase1.md](docs/ontology/phase1.md)
-4. [docs/engine/practical-principles.md](docs/engine/practical-principles.md)
-5. [docs/engine/phase1-engine.md](docs/engine/phase1-engine.md)
-6. [docs/programs/program-map.md](docs/programs/program-map.md)
-7. [docs/roadmap/implementation-roadmap.md](docs/roadmap/implementation-roadmap.md)
+4. [docs/ontology/minimal-runtime-model.md](docs/ontology/minimal-runtime-model.md)
+5. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
 
-### 2) 구현 저장소 정렬이 필요한 사람
-1. [docs/programs/implementation-repo-reference-guide.md](docs/programs/implementation-repo-reference-guide.md)
-2. [docs/ontology/minimal-runtime-model.md](docs/ontology/minimal-runtime-model.md)
-3. [docs/roadmap/ontology-implementation-checklist.md](docs/roadmap/ontology-implementation-checklist.md)
-4. [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md) *(Phase 2 expansion reference)*
-5. [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md) *(Phase 2 expansion reference)*
-6. [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md) *(Phase 2 expansion reference)*
-7. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
-8. 각 구현 저장소의 로컬 `AGENTS.md` / `README.md` / mapping 문서
+#### Step B. ontology를 사용하는 active 문서를 본다
+6. [docs/engine/practical-principles.md](docs/engine/practical-principles.md)
+7. [docs/engine/phase1-engine.md](docs/engine/phase1-engine.md)
+8. [docs/scenarios/phase1-scenarios.md](docs/scenarios/phase1-scenarios.md)
+9. [docs/programs/program-map.md](docs/programs/program-map.md)
+10. [docs/roadmap/implementation-roadmap.md](docs/roadmap/implementation-roadmap.md)
 
-### 3) 문서 정리/거버넌스 검토가 필요한 사람
+#### Step C. 구현 저장소 정렬이나 self-check가 필요할 때만 본다
+11. [docs/programs/implementation-repo-reference-guide.md](docs/programs/implementation-repo-reference-guide.md)
+12. [docs/roadmap/ontology-implementation-checklist.md](docs/roadmap/ontology-implementation-checklist.md)
+13. [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md) *(Phase 2 expansion reference)*
+14. [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md) *(Phase 2 expansion reference)*
+15. [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md) *(Phase 2 expansion reference)*
+16. 각 구현 저장소의 로컬 `AGENTS.md` / `README.md` / mapping 문서
+
+### 2) 문서 정리/거버넌스 검토가 필요한 사람
 1. [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md)
 2. [docs/ontology/consolidation-status.md](docs/ontology/consolidation-status.md)
-3. [docs/ontology/archive-triage.md](docs/ontology/archive-triage.md)
-4. [docs/ontology/skill-alignment.md](docs/ontology/skill-alignment.md)
+3. [docs/ontology/skill-alignment.md](docs/ontology/skill-alignment.md)
 
 ## 문서 지도: 역할별 분류
 
@@ -50,6 +55,8 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 #### Ontology
 - [docs/ontology/common-semiconductor-amhs.md](docs/ontology/common-semiconductor-amhs.md) — 공통 반도체/AMHS 상위 개념
 - [docs/ontology/phase1.md](docs/ontology/phase1.md) — 현재 Phase 1 ontology 기준
+- [docs/ontology/minimal-runtime-model.md](docs/ontology/minimal-runtime-model.md) — Phase 1 최소 runtime vocabulary / 상태 canonical
+- [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md) — ontology와 구현 저장소의 ownership / source-of-truth 규칙
 
 #### Engine / runtime principles
 - [docs/engine/practical-principles.md](docs/engine/practical-principles.md) — runtime / trace / policy 실전 원칙
@@ -64,11 +71,9 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 구현 저장소들이 맞춰야 하는 semantic alignment 기준이다.
 이 문서들은 구현 세부 schema를 고정하지 않지만, **무엇을 맞춰야 하는지**를 고정한다.
 
-- [docs/ontology/minimal-runtime-model.md](docs/ontology/minimal-runtime-model.md) — runtime vocabulary / 상태 canonical
 - [docs/engine/supervisor-structure.md](docs/engine/supervisor-structure.md) — supervisor 구조 확장 기준
 - [docs/engine/execution-trace-structure.md](docs/engine/execution-trace-structure.md) — execution trace 구조화 기준
 - [docs/engine/policy-permission-structure.md](docs/engine/policy-permission-structure.md) — policy / permission 구조화 기준
-- [docs/ontology/source-of-truth.md](docs/ontology/source-of-truth.md) — ownership / source-of-truth 규칙
 
 ### B-1. Implementation reference guide
 구현 저장소가 self-check 할 때 참고할 읽는 순서와 질문을 제공하는 안내 문서다.
@@ -87,7 +92,6 @@ AMOS의 반도체/AMHS ontology, runtime 의미 체계, scenario, program bounda
 중요하지만 primary domain canon과는 역할이 다르다.
 
 - [docs/ontology/consolidation-status.md](docs/ontology/consolidation-status.md) — canonical / pointer / archive 정리 현황
-- [docs/ontology/archive-triage.md](docs/ontology/archive-triage.md) — archive 문서 승격/유지/폐기 판단
 - [docs/ontology/skill-alignment.md](docs/ontology/skill-alignment.md) — skill과 domain canonical의 역할 분리
 - [docs/archive/today-discussion-summary.md](docs/archive/today-discussion-summary.md) — 대화 기반 과도기 요약 *(archive/history)*
 - [AGENTS.md](AGENTS.md) — 이 저장소에서 작업할 때의 운영 메모

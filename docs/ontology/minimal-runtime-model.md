@@ -1,7 +1,7 @@
 # Minimal Runtime Model
 
 ## 목적
-이 문서는 AMOS Phase 1에서 구현 저장소들이 공통으로 맞춰야 할 최소 runtime 용어와 상태 집합을 고정한다.
+이 문서는 AMOS foundation에서 구현 저장소들이 공통으로 맞춰야 할 최소 runtime 용어와 상태 집합을 고정한다.
 
 - domain의 역할: 의미와 경계를 정의한다.
 - 구현 저장소의 역할: 이 의미를 자신의 schema / API / event / state에 어떻게 매핑할지 관리한다.
@@ -59,7 +59,7 @@
 - `ExecutionTrace`는 위 판단과 실행 흐름을 복기 가능하게 기록한다.
 
 ## 최소 상태 집합
-Phase 1에서 canonical로 맞출 최소 상태는 아래 6개다.
+foundation에서 canonical로 맞출 최소 상태는 아래 6개다.
 
 - `pending`
 - `clarifying`
@@ -82,7 +82,7 @@ Phase 1에서 canonical로 맞출 최소 상태는 아래 6개다.
 ### executing
 실행 계획 수립 또는 실제 tool/action 수행이 진행 중인 상태.
 
-- 내부적으로 여러 세부 단계가 있어도 Phase 1 canonical 수준에서는 하나의 실행 상태로 본다.
+- 내부적으로 여러 세부 단계가 있어도 foundation canonical 수준에서는 하나의 실행 상태로 본다.
 
 ### completed
 도메인 관점에서 요청/작업이 정상 종료된 상태.
@@ -123,5 +123,5 @@ Phase 1에서 canonical로 맞출 최소 상태는 아래 6개다.
 4. 부분 대응인 경우 어디까지 일치하는지
 
 ## 참고
-- `phase1.md`는 Phase 1 ontology의 전체 문맥을 설명한다.
+- `../phase/foundation-ontology.md`는 foundation ontology의 전체 문맥을 설명한다.
 - 이 문서는 구현 저장소들이 공통으로 맞춰야 할 최소 runtime vocabulary와 lifecycle을 별도로 고정하기 위한 문서다.

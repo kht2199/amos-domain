@@ -18,15 +18,15 @@
   - `docs/engine/supervisor-structure.md`
   - `docs/engine/execution-trace-structure.md`
   - `docs/engine/policy-permission-structure.md`
-- 위 3개 engine 문서는 Phase 2 full expansion reference이며, Phase 1에서는 self-check용 선참고 문서로 본다.
+- 위 3개 engine 문서는 later expansion reference이며, foundation 범위에서는 self-check용 선참고 문서로 본다.
 - domain 문서는 canonical 의미와 판단 축을 제공하고, 각 구현 저장소의 로컬 mapping 문서 및 실제 코드/테스트가 로컬 구현 기준을 소유한다.
 - domain 저장소에는 저장소별 구현 매핑 표를 복제하지 말고, 필요한 경우 “무엇을 참고해야 하는지”와 “어떤 기준으로 보면 되는지”만 남긴다.
 
 ## 문서 정리 원칙
 
-- `docs/ontology/minimal-runtime-model.md` 를 Phase 1 runtime vocabulary / 상태 canonical 기준으로 우선 참조한다.
-- `docs/roadmap/ontology-implementation-checklist.md` 는 Phase 1 active checklist이고, `implementation-repo-reference-guide.md` 는 읽는 순서와 질문을 안내하는 guide다.
-- `phase1.md` 는 큰 그림과 관계를, `phase1-engine.md` 는 엔진 구조와 observability 관점을 담당한다.
+- `docs/ontology/minimal-runtime-model.md` 를 foundation runtime vocabulary / 상태 canonical 기준으로 우선 참조한다.
+- `docs/roadmap/ontology-implementation-checklist.md` 는 현재 foundation active checklist이고, `implementation-repo-reference-guide.md` 는 읽는 순서와 질문을 안내하는 guide다.
+- `docs/phase/foundation-ontology.md` 는 큰 그림과 관계를, `docs/phase/foundation-engine.md` 는 엔진 구조와 observability 관점을 담당한다.
 - Honcho 같은 agent 운영용 기억/맥락 회수 메커니즘은 canonical docs에 퍼뜨리지 말고, 필요하면 `AGENTS.md` 같은 작업 규칙 문서에서만 다룬다.
 - 이미 통합된 내용은 중복 문서로 다시 늘리지 말고 pointer 문서 또는 링크로 정리한다.
 - 저장소별 concept-to-code mapping 표는 이 저장소에 복제하지 말고, 필요한 경우 링크와 점검 기준만 남긴다.

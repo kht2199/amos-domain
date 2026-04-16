@@ -9,21 +9,21 @@
 ### domain canonical 문서
 위치:
 - `common-semiconductor-amhs.md`
-- `phase1.md`
+- `foundation-ontology.md`
 - `minimal-runtime-model.md`
 - `../engine/practical-principles.md`
-- `../engine/phase1-engine.md`
+- `../phase/foundation-engine.md`
 - `../engine/supervisor-structure.md`
 - `../engine/execution-trace-structure.md`
 - `../engine/policy-permission-structure.md`
 
 역할:
 - 현재 active source of truth
-- phase별 설계 기준
+- 단계별 설계 기준
 - runtime / trace / policy / roadmap와의 직접 연결
 
 참고:
-- `../engine/runtime-observability.md` 는 active canonical이 아니라 `../engine/phase1-engine.md`를 가리키는 pointer 문서다.
+- `../engine/runtime-observability.md` 는 active canonical이 아니라 `../phase/foundation-engine.md`를 가리키는 pointer 문서다.
 
 ### active reference guide
 위치:
@@ -46,7 +46,7 @@
 ## 중복/차이 표
 | 항목 | domain에 둘 것 | skill에 둘 것 | 비고 |
 |---|---|---|---|
-| Phase 1 ontology | 예 | 아니오(링크/요약만) | active 기준은 domain 우선 |
+| foundation ontology | 예 | 아니오(링크/요약만) | active 기준은 domain 우선 |
 | runtime state / trace / policy 연결 | 예 | 최소 설명만 | 구현 연결은 domain이 담당 |
 | 공통 AMHS 용어표 | 예 | 예(축약본) | skill은 빠른 참조용 축약 허용 |
 | 이미지 판독 규칙 | 아니오(필요 최소만) | 예 | skill 쪽 강점 |
@@ -62,12 +62,12 @@
 ### domain으로 승격/유지할 것
 - ontology의 active 기준
 - minimal runtime vocabulary / state canonical
-- phase roadmap
+- stage roadmap
 - trace/policy/runtime 연결
 - archive triage / consolidation status
 
 ### skill에서 직접 소유하지 않을 것
-- 프로젝트별 phase1 상세 내용
+- 프로젝트별 foundation 상세 내용
 - 구현 저장소와의 코드 매핑 상세표
 - active roadmap/checklist 원문
 - 이런 매핑 상세표의 정식 소유자는 domain이 아니라 각 구현 저장소다.

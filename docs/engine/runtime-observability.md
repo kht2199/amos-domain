@@ -1,9 +1,9 @@
 # Runtime / Observability
 
-이 문서의 핵심 내용은 `phase1-engine.md`로 통합되었다.
+이 문서의 핵심 내용은 `../phase/foundation-engine.md`로 통합되었다.
 
 ## 현재 기준
-- Phase 1 엔진 구조와 observability 기준: `phase1-engine.md`
+- foundation 엔진 구조와 observability 기준: `../phase/foundation-engine.md`
 - runtime vocabulary와 canonical 상태 집합: `../ontology/minimal-runtime-model.md`
 - 실전 운영 원칙과 불변식: `practical-principles.md`
 

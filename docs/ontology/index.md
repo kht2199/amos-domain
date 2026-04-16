@@ -8,15 +8,15 @@
 
 ## 이 폴더 안의 확인 순서
 1. `common-semiconductor-amhs.md`에서 공통 반도체/AMHS 상위 개념을 먼저 확인한다.
-2. `phase1.md`에서 Phase 1 ontology 범위, 관계, 해석 축을 확인한다.
+2. `../phase/foundation-ontology.md`에서 현재 foundation ontology 범위, 관계, 해석 축을 확인한다.
 3. `minimal-runtime-model.md`에서 공통 runtime vocabulary와 최소 상태 canonical을 확인한다.
 4. `source-of-truth.md`에서 ontology 문서와 다른 층위 문서의 ownership 경계를 확인한다.
 5. 필요할 때만 `consolidation-status.md`, `skill-alignment.md`로 정리 상태와 governance 메모를 확인한다.
 
 ## 문서
 - `common-semiconductor-amhs.md` — 공통 반도체/AMHS 상위 개념
-- `phase1.md` — 현재 Phase 1 ontology 기준
-- `minimal-runtime-model.md` — Phase 1 공통 용어와 최소 상태 집합 canonical
+- `../phase/foundation-ontology.md` — 현재 foundation ontology 기준
+- `minimal-runtime-model.md` — foundation 공통 용어와 최소 상태 집합 canonical
 - `source-of-truth.md` — ontology 문서와 타 문서 층위의 ownership / source-of-truth 규칙
 - `consolidation-status.md` — canonical / pointer / archive 정리 상태
 - `skill-alignment.md` — skill과 domain canonical의 역할 분리 기준

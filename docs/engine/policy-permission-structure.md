@@ -1,12 +1,12 @@
 # Policy / Permission Structure
 
 ## 목적
-이 문서는 AMOS Phase 2에서 `Policy` 와 `Permission` 을 단순 승인 여부 체크가 아니라, **요청 실행 가능성에 대한 구조적 판단 계층**으로 정리할 때 domain 수준에서 무엇을 고정해야 하는지 설명한다.
+이 문서는 AMOS Expansion에서 `Policy` 와 `Permission` 을 단순 승인 여부 체크가 아니라, **요청 실행 가능성에 대한 구조적 판단 계층**으로 정리할 때 domain 수준에서 무엇을 고정해야 하는지 설명한다.
 
 중요:
-- 이 문서는 **Phase 2 policy / permission decision layer expansion**을 설명한다.
-- 다만 Phase 1에서도 `allow / deny / confirm / clarify` 구분을 self-check 할 수 있도록 reference contract로 선참고한다.
-- Phase 1에서 우선 맞춰야 하는 범위와 순서는 `../roadmap/ontology-implementation-checklist.md`를 따른다.
+- 이 문서는 **후속 policy / permission decision layer 확장 기준**을 설명한다.
+- 다만 Foundation에서도 `allow / deny / confirm / clarify` 구분을 self-check 할 수 있도록 reference contract로 선참고한다.
+- Foundation에서 우선 맞춰야 하는 범위와 순서는 `../roadmap/ontology-implementation-checklist.md`를 따른다.
 - 이 문서는 특정 저장소의 enum, payload, middleware, approval API schema를 canonical로 고정하지 않는다.
 - 이 문서의 역할은 어떤 정책 판단이 필요한지, 그 판단이 `Request` / `Task` / `Policy` / `ClarifyRequest` / `ExecutionTrace` / runtime state와 어떻게 연결되는지 정의하는 것이다.
 - 구현 저장소는 자신의 API / state / event / audit log 구조에서 이를 표현하며, ownership boundary는 `../ontology/source-of-truth.md`를 따른다.
@@ -137,7 +137,7 @@ canonical 결과:
 - 단순 실패(`failed`)와 구분되는 핵심 근거다.
 
 ## 최소 policy decision semantics
-Phase 2에서 policy / permission 계층은 로컬 구현 이름과 무관하게 최소한 아래 의미를 재구성할 수 있어야 한다.
+Expansion에서 policy / permission 계층은 로컬 구현 이름과 무관하게 최소한 아래 의미를 재구성할 수 있어야 한다.
 
 ### 필수 의미 축
 - `risk_tier`
@@ -176,7 +176,7 @@ Phase 2에서 policy / permission 계층은 로컬 구현 이름과 무관하게
 - policy 판단은 단순 boolean 허용 여부가 아니라, explainability 가능한 decision layer여야 한다.
 
 ## 최소 판단 흐름
-Phase 2에서 policy / permission 판단은 아래 흐름을 따른다.
+Expansion에서 policy / permission 판단은 아래 흐름을 따른다.
 
 1. `Request` 해석
 2. `Task` 또는 action candidate 도출

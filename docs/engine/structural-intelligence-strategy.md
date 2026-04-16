@@ -65,7 +65,7 @@ AMOS는 단순한 문서 검색 챗봇이 아니라,
 7. trace 구조화 기록
 
 ## 현재 active 적용 원칙
-Phase 1에서는 위 전략을 전부 구현하지 않는다.
+Foundation에서는 위 전략을 전부 구현하지 않는다.
 대신 아래를 우선한다.
 - missing slot 기반 clarify
 - trace 구조화

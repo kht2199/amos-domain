@@ -26,7 +26,7 @@
 ### 0. ontology-first 확인 완료
 먼저 확인할 것:
 - `../ontology/common-semiconductor-amhs.md`
-- `../ontology/phase1.md`
+- `../phase/foundation-ontology.md`
 - `../ontology/minimal-runtime-model.md`
 - `../ontology/source-of-truth.md`
 
@@ -107,7 +107,7 @@ canonical decision:
 - blocked와 failed를 어떤 규칙으로 나누는가?
 - approval / permission / safety 제약이 어디에 표현되는가?
 
-### 5. Phase 1 checklist로 마무리 확인
+### 5. foundation checklist로 마무리 확인
 우선 읽을 문서:
 - `../roadmap/ontology-implementation-checklist.md`
 

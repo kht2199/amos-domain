@@ -7,10 +7,10 @@
 
 ## 현재 canonical domain 문서
 - `common-semiconductor-amhs.md`
-- `phase1.md`
+- `foundation-ontology.md`
 - `../engine/practical-principles.md`
-- `../engine/phase1-engine.md`
-- `../scenarios/phase1-scenarios.md`
+- `../phase/foundation-engine.md`
+- `../phase/foundation-scenarios.md`
 - `../programs/program-map.md`
 - `../roadmap/implementation-roadmap.md`
 
@@ -25,7 +25,7 @@
 - `../programs/implementation-repo-reference-guide.md`
 
 ## 현재 pointer 문서
-- `../engine/runtime-observability.md` → 핵심 내용은 `../engine/phase1-engine.md`로 통합
+- `../engine/runtime-observability.md` → 핵심 내용은 `../phase/foundation-engine.md`로 통합
 - `../programs/project-classification.md` → 핵심 내용은 `../programs/program-map.md`로 통합
 
 ## 중복 정리 결과

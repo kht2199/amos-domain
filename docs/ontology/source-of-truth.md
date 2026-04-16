@@ -21,5 +21,5 @@
 
 ## 운영 규칙
 - 회의/세션 메모가 있더라도, 결정 사항은 active 문서에 반영해야 한다.
-- 새로운 phase 결론은 roadmap 문서에 먼저 적고, 필요 시 ontology/engine/scenario 문서에 승격한다.
+- 새로운 단계 결론은 roadmap 문서에 먼저 적고, 필요 시 ontology/engine/scenario 문서에 승격한다.
 - domain은 “무엇을 의미하는가”를 정의하고, 구현 저장소는 “그 의미가 코드에서 어디에 놓이는가”를 정의한다.

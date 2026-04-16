@@ -1,20 +1,20 @@
-# AMOS Ontology Phase 1
+# AMOS Ontology Foundation
 
 > 이 문서는 이제 AMOS 반도체 ontology의 active 기준 문서다.
 > 기존 구현 저장소의 동명/유사 문서는 중복 방지를 위해 이 문서를 가리키는 포인터로만 유지한다.
 
 ## 목적
-이 문서는 AMOS의 반도체/AMHS 도메인 온톨로지를 **Phase 1에서 먼저 고정해야 할 개념/관계 중심**으로 정리한 active 문서다.
+이 문서는 AMOS의 반도체/AMHS 도메인 온톨로지를 **현재 foundation에서 먼저 고정해야 할 개념/관계 중심**으로 정리한 active 문서다.
 
 중요:
 - 이 문서는 `docs/archive/` 아래의 과거 draft를 대체하는 현재 작업 기준이다.
 - 이 문서는 ontology의 **의미와 경계**를 우선 정의한다.
 - runtime 상태 canonical과 구현 적용 절차는 이 문서 밖의 하위 문서가 소유한다.
-- Phase 1에서는 거대한 지식그래프보다 **운영에 바로 쓰이는 공통 의미 체계**를 우선한다.
+- 현재 foundation에서는 거대한 지식그래프보다 **운영에 바로 쓰이는 공통 의미 체계**를 우선한다.
 
 ---
 
-## Phase 1에서 다루는 ontology 범위
+## 현재 foundation에서 다루는 ontology 범위
 
 ### 1) Structure Layer
 무엇이 존재하는지와 어떤 상위 개념 아래에 놓이는지 정의한다.
@@ -32,10 +32,10 @@
 - `ExecutionTrace` — 요청 처리 과정을 복기 가능하게 남기는 실행 근거
 
 참고:
-- canonical 용어 정의는 `minimal-runtime-model.md`를 따른다.
+- canonical 용어 정의는 `../ontology/minimal-runtime-model.md`를 따른다.
 - 구현별 로컬 이름, 클래스, event shape는 이 문서의 범위가 아니다.
 
-Phase 1에서는 장비를 세분화하되, 코드 영향은 최소화한다.
+현재 foundation에서는 장비를 세분화하되, 코드 영향은 최소화한다.
 - `EquipmentType.AGV`
 - `EquipmentType.STK`
 - `EquipmentType.CNV`
@@ -46,20 +46,20 @@ Phase 1에서는 장비를 세분화하되, 코드 영향은 최소화한다.
 ### 2) Runtime State Layer
 현재 ontology가 구분해야 할 상태 축이 무엇인지 정의한다.
 
-Phase 1에서는 다음 상태 축을 구분한다.
+현재 foundation에서는 다음 상태 축을 구분한다.
 - Carrier 위치/상태
 - Lot 위치/상태
 - Equipment 상태
 - Request / Task / execution lifecycle 상태
 
 참고:
-- Request / Task / execution lifecycle의 canonical 용어와 상태 집합은 `minimal-runtime-model.md`에서 고정한다.
+- Request / Task / execution lifecycle의 canonical 용어와 상태 집합은 `../ontology/minimal-runtime-model.md`에서 고정한다.
 - 이 문서는 상태 집합의 존재와 구분 필요성만 설명한다.
 
 ### 3) Event Layer
 상태 변화와 판단 결과가 어떤 종류의 사건으로 표현되는지 정의한다.
 
-Phase 1에서 최소로 구분하는 사건 종류:
+현재 foundation에서 최소로 구분하는 사건 종류:
 - request 수용
 - task 분해/선택
 - tool/action 호출
@@ -107,7 +107,7 @@ Phase 1에서 최소로 구분하는 사건 종류:
 ---
 
 ## 사용자 질의 해석 기준
-Phase 1에서는 자연어 요청을 아래 ontology 축으로 해석한다.
+현재 foundation에서는 자연어 요청을 아래 ontology 축으로 해석한다.
 
 ### 1. Intent
 - `query_status`
@@ -147,11 +147,11 @@ Phase 1에서는 자연어 요청을 아래 ontology 축으로 해석한다.
 
 ## 경계 원칙
 - 이 문서는 ontology의 개념, 관계, 해석 축, 최소 경계를 정의한다.
-- runtime 상태 canonical은 `minimal-runtime-model.md`가 소유한다.
+- runtime 상태 canonical은 `../ontology/minimal-runtime-model.md`가 소유한다.
 - 이 문서는 구현 저장소별 클래스/필드/API 이름이나 concept-to-code mapping을 소유하지 않는다.
-- 상세 ownership / source-of-truth 규칙은 `source-of-truth.md`를 따른다.
+- 상세 ownership / source-of-truth 규칙은 `../ontology/source-of-truth.md`를 따른다.
 
-## Phase 1 이후 확장 방향
+## 이후 확장 방향
 다음은 다음 단계에서 ontology를 더 세분화할 때의 후보 축이다.
 - OHT / bridge / port / rail / lift topology 세분화
 - scenario / replay / synthetic data generation을 위한 추가 ontology

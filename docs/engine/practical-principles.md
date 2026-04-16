@@ -7,18 +7,18 @@
 
 ## 0. 먼저 볼 문서
 - runtime vocabulary / 상태 canonical: `../ontology/minimal-runtime-model.md`
-- Phase 1 엔진 구조: `phase1-engine.md`
+- foundation 엔진 구조: `../phase/foundation-engine.md`
 - active checklist: `../roadmap/ontology-implementation-checklist.md`
 - 구현 저장소 참고 순서: `../programs/implementation-repo-reference-guide.md`
-- supervisor 판단 축: `supervisor-structure.md` *(Phase 2 expansion reference)*
-- execution trace 구조: `execution-trace-structure.md` *(Phase 2 expansion reference)*
-- policy / permission 구조: `policy-permission-structure.md` *(Phase 2 expansion reference)*
+- supervisor 판단 축: `supervisor-structure.md` *(later expansion reference)*
+- execution trace 구조: `execution-trace-structure.md` *(later expansion reference)*
+- policy / permission 구조: `policy-permission-structure.md` *(later expansion reference)*
 
 이 문서는 위 문서들을 실제로 운용할 때의 실전 원칙을 덧붙이는 위치다.
 
 중요:
-- Phase 1에서 지금 당장 맞춰야 하는 우선순위는 active checklist를 따른다.
-- supervisor / trace / policy-permission 문서는 현재 active checklist를 보조하는 Phase 2 expansion reference다.
+- 현재 foundation에서 지금 당장 맞춰야 하는 우선순위는 active checklist를 따른다.
+- supervisor / trace / policy-permission 문서는 현재 active checklist를 보조하는 later expansion reference다.
 
 ## 1. 문서보다 런타임 정합성을 우선한다
 - README/GUIDE에 있는 용어와 실제 코드 의미가 다르면 코드를 기준으로 문서를 즉시 맞춘다.
@@ -34,7 +34,7 @@
 - `failed`가 발생했는데도 억지로 다음 task로 넘어가지 않는다.
 - action 계열은 승인 없이 자동 실행하지 않는다.
 
-## 3. Phase 1은 최소 의미 체계에 집중한다
+## 3. Foundation은 최소 의미 체계에 집중한다
 지금 당장 반드시 맞춰야 하는 축만 유지한다.
 - entity: Carrier / Lot / Equipment / Fab / Request / Task / ExecutionTrace
 - equipment type: AGV / STK / CNV / LFT
@@ -46,7 +46,7 @@
 - 지금 routing에 필요한가?
 - trace에 남겨야 하는가?
 - KPI 계산에 필요한가?
-- Phase 1 범위를 넘는가?
+- 현재 foundation 범위를 넘는가?
 
 ## 4. 새 용어는 반드시 연결 지점을 가진다
 새 용어를 정의할 때는 아래 5개 중 최소 1개를 같이 적는다.
@@ -90,7 +90,7 @@
 - 관련 테스트가 있는가?
 - request log에서 복기 가능한가?
 - 사용자가 봤을 때 용어가 더 명확해졌는가?
-- phase 1 범위를 불필요하게 넓히지 않았는가?
+- foundation 범위를 불필요하게 넓히지 않았는가?
 
 ## 9. 지향하는 결과
 이 원칙의 목표는 세 가지다.

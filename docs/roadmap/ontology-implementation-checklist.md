@@ -8,7 +8,7 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 이 문서는 domain 기준과 구현 정렬 순서를 정의한다.
 저장소별 상세 매핑표 자체는 각 구현 저장소에서 관리한다.
 
-## Phase 1 — 지금 바로 연결할 것
+## Immediate Alignment — 지금 바로 연결할 것
 ### 1. 용어와 최소 모델 고정
 - `Request`, `Task`, `ToolCall`, `Policy`, `ClarifyRequest`, `ExecutionTrace` 용어를 현재 코드와 대조
 - canonical 정의는 `../ontology/minimal-runtime-model.md`를 기준으로 삼는다
@@ -34,7 +34,7 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
   - 누락/편차
   - 정리 예정 항목
 
-## Phase 2 — Supervisor 구조 확장
+## Supervisor 구조 확장
 - `intent`
 - `entity_candidates`
 - `missing_slots`
@@ -46,7 +46,7 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 완료 기준:
 - supervisor가 단순 다음 실행 주체 선택을 넘어서 구조적 판단 결과를 낸다.
 
-## Phase 3 — Execution Trace 구조화
+## Execution Trace 구조화
 - request intent
 - entity candidates
 - missing slots
@@ -57,19 +57,19 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 완료 기준:
 - 한 요청이 왜 답변/차단/clarify/실패로 끝났는지 trace만 보고 재구성 가능하다.
 
-## Phase 4 — Policy / Permission 연결
+## Policy / Permission 연결
 - tool risk tier 기준
 - confirmation 필요 조건
 - block 조건
 - clarify 우선 조건
 - `allow/deny/confirm/clarify` decision 레이어
 
-## Phase 5 — Retrieval 구조화
+## Retrieval 구조화
 - entity-aware retrieval 최소 도입
 - source / trust level / tags / entity reference 메타데이터 전략
 - retrieval 단계에서의 trust/policy 반영 검토
 
-## Phase 6 — Clarify 패턴 정리
+## Clarify 패턴 정리
 - 자주 빠지는 slot 목록화
 - 옵션형 clarify 패턴 정리
 - 대표 clarify 예시 축적
@@ -79,7 +79,7 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 
 이 체크리스트는
 - 어떤 semantic alignment 축을 언제 정리할지
-- Phase 1~6에서 무엇을 완료 기준으로 볼지
+- 위 정렬 구간에서 무엇을 완료 기준으로 볼지
 를 고정하는 문서로 유지한다.
 
 ## 문서 역할 경계
@@ -87,7 +87,7 @@ ontology를 문서로만 두지 않고, supervisor / clarify / trace / policy / 
 
 이 문서는 문서 reading guide가 아니라,
 - 어떤 semantic alignment 축을 언제 정리할지
-- Phase 1~6에서 무엇을 완료 기준으로 볼지
+- 위 정렬 구간에서 무엇을 완료 기준으로 볼지
 를 정리하는 roadmap / checklist 역할을 맡는다.
 
 중요:

@@ -7,8 +7,8 @@
 `implementation-repo-reference-guide.md`를 우선 참고한다.
 
 중요:
-- Phase 1에서 지금 당장 맞춰야 하는 우선순위는 `../roadmap/ontology-implementation-checklist.md`를 따른다.
-- `supervisor-structure.md`, `execution-trace-structure.md`, `policy-permission-structure.md`는 구현 저장소가 선참고하는 Phase 2 expansion reference다.
+- 현재 foundation에서 지금 당장 맞춰야 하는 우선순위는 `../roadmap/ontology-implementation-checklist.md`를 따른다.
+- `supervisor-structure.md`, `execution-trace-structure.md`, `policy-permission-structure.md`는 구현 저장소가 선참고하는 later expansion reference다.
 
 ## 분류 기준
 
@@ -87,7 +87,7 @@
 
 ## 원칙
 - domain 프로젝트는 구현 저장소를 대체하지 않는다.
-- 대신 여러 저장소가 공유해야 하는 의미 체계와 phase 계획을 관리한다.
+- 대신 여러 저장소가 공유해야 하는 의미 체계와 단계 로드맵을 관리한다.
 - 구현 저장소의 우선순위는 core 적합도가 아니라 **연결 책임** 기준으로 다시 본다.
 - 따라서 orchestration / assistant surface는 중요할 수는 있어도 중심은 아니다.
 - domain은 공통 개념과 원칙을 정의하고, 각 구현 저장소는 그 개념을 자기 코드에 매핑한 문서를 자체적으로 유지한다.
